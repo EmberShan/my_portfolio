@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Nav from '../components/Nav/Nav'
-import Page from '../pages/Page.js'
+import Page from '../pages/AllPages/Page.js'
 import Loading from '../pages/Loading';
 // for custom cursor 
 import DotRing from '../components/CustomCursor/DotRing/DotRing'

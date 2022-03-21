@@ -5,33 +5,34 @@ export default function useScrollDirection() {
     // scrolling down = false, scrolling up = true
 
     useEffect(() => {
-    const threshold = 0;
-    let lastScrollY = window.pageYOffset;
-    let ticking = false;
+        const threshold = 50;
+        let lastScrollY = window.pageYOffset;
+        let ticking = false;
 
-    const updateScrollDir = () => {
-        const scrollY = window.pageYOffset;
+        const updateScrollDir = () => {
+            const scrollY = window.pageYOffset;
 
-        if (Math.abs(scrollY - lastScrollY) < threshold) {
-        ticking = false;
-        return;
-        }
-        setScrollDir(scrollY > lastScrollY ? "false" : "true");
-        lastScrollY = scrollY > 0 ? scrollY : 0;
-        ticking = false;
-    };
+            if (Math.abs(scrollY - lastScrollY) < threshold) {
+            ticking = false;
+            return;
+            }
+            setScrollDir(scrollY > lastScrollY ? "false" : "true");
+            lastScrollY = scrollY > 0 ? scrollY : 0;
+            ticking = false;
+        };
 
-    const onScroll = () => {
-        if (!ticking) {
-        window.requestAnimationFrame(updateScrollDir);
-        ticking = true;
-        }
-    };
+        const onScroll = () => {
+            if (!ticking) {
+            window.requestAnimationFrame(updateScrollDir);
+            ticking = true;
+            }
+        };
 
-    window.addEventListener("scroll", onScroll);
-    // console.log(scrollDir);
+        window.addEventListener("scroll", onScroll);
+        // console.log(scrollDir);
 
-    return () => window.removeEventListener("scroll", onScroll);
+        return () => window.removeEventListener("scroll", onScroll);
+
     }, [scrollDir]);
 
 }
