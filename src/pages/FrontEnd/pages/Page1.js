@@ -1,7 +1,8 @@
 import React from 'react';
 import '../FrontEnd.scss';
 import {webSkills} from '../../../imgs';
-import {FullPage, Arrow, Container, Icon, Title} from '../../../components/styles'
+import {FullPage, Arrow, Container, Icon, Title} from '../../../components/styles';
+import CustomMarquee from '../../../components/Marquee';
 
 const Page1 = () => {
   return (
@@ -17,10 +18,12 @@ const Page1 = () => {
             )
         })}  
       </Icon>
+
+      <CustomMarquee />
       
-      <div>
+      {/* <div>
         <Arrow className='arrow'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
-      </div>
+      </div> */}
 
     </FullPage>
   )
