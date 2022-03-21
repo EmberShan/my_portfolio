@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.ae1d6297.css",
-    "main.js": "/my_portfolio/static/js/main.97c87e1f.js",
+    "main.css": "/my_portfolio/static/css/main.948d0dd6.css",
+    "main.js": "/my_portfolio/static/js/main.8597f404.js",
     "static/js/787.1ed0c42c.chunk.js": "/my_portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Impressionism.mp4": "/my_portfolio/static/media/Impressionism.b4b79dee6f35db29dbdc.mp4",
     "static/media/1.jpg": "/my_portfolio/static/media/1.b2df473e981823edca64.jpg",
@@ -26,12 +26,12 @@
     "static/media/indesign.png": "/my_portfolio/static/media/indesign.1efe97b64b1feba167fe.png",
     "static/media/fa-v4compatibility.woff2": "/my_portfolio/static/media/fa-v4compatibility.2e77423e3ed431908eda.woff2",
     "index.html": "/my_portfolio/index.html",
-    "main.ae1d6297.css.map": "/my_portfolio/static/css/main.ae1d6297.css.map",
-    "main.97c87e1f.js.map": "/my_portfolio/static/js/main.97c87e1f.js.map",
+    "main.948d0dd6.css.map": "/my_portfolio/static/css/main.948d0dd6.css.map",
+    "main.8597f404.js.map": "/my_portfolio/static/js/main.8597f404.js.map",
     "787.1ed0c42c.chunk.js.map": "/my_portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae1d6297.css",
-    "static/js/main.97c87e1f.js"
+    "static/css/main.948d0dd6.css",
+    "static/js/main.8597f404.js"
   ]
 }
