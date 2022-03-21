@@ -5,7 +5,6 @@ import './Nav.scss'
 import { MenuItems } from "./MenuItems";
 import useWindowDimensions from './windowDimension'
 
-
 const Nav = (props) => {
     const [clicked, setClicked] = useState(false);
     const { width } = useWindowDimensions();
@@ -17,6 +16,7 @@ const Nav = (props) => {
     
     return (
         // disappear on scroll only when on desktop
+        
         <nav className="NavBar" 
             style={ width > 1140 ? 
                 (props.visible ? {top: '0'} : {top: '-100%'}) 

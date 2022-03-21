@@ -1,0 +1,51 @@
+@use '../../Constant' as c;
+$ring_size: 70px;
+$dot_size: 10px;
+
+.cursor{
+  display: none;
+}
+
+@media screen and (min-width: 1140px) {
+  .cursor{
+    display: block;
+  }
+
+  .ring, .dot{
+    mix-blend-mode: difference;
+
+    &.ring {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: $ring_size;
+      height: $ring_size;
+      border: 2px solid c.$font1;
+      border-radius: 100%;
+      transform: translate(-50%, -50%);
+      -webkit-transition-duration: 100ms;
+      transition-duration: 200ms; //speed that the ring will follow the dot
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      will-change: width, height, transform, border;
+      z-index: 999;
+      pointer-events: none;
+    }
+    
+    &.dot {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: $dot_size;
+      height: $dot_size;
+      background-color: c.$cursor;
+      border-radius: 100%;
+      transform: translate(-50%, -50%);
+      z-index: 999;
+      pointer-events: none;
+    }
+  }
+
+    
+}
+

@@ -5,10 +5,14 @@ import reportWebVitals from './reportWebVitals';
 //fontawesome
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
+import MouseContextProvider from "./components/context/mouse-context";
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MouseContextProvider>
+      <App />
+    </MouseContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
