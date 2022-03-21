@@ -5,6 +5,7 @@ import './Nav.scss'
 import { MenuItems } from "./MenuItems";
 import useWindowDimensions from './windowDimension'
 
+
 const Nav = (props) => {
     const [clicked, setClicked] = useState(false);
     const { width } = useWindowDimensions();

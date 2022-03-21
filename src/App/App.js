@@ -1,17 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import Nav from '../components/Nav/Nav'
 import Page from '../pages/AllPages/Page.js'
 import Loading from '../pages/Loading';
 // for custom cursor 
 import DotRing from '../components/CustomCursor/DotRing/DotRing'
-// hooks
-import { MouseContext } from "../components/context/mouse-context";
-
 
 import './App.scss';
 
 
 function App(){
+  // const { cursorType, cursorChangeHandler } = useContext(MouseContext);
 
   const [isLoading, setIsLoading] = useState(false); 
   const [scrollDir, setScrollDir] = useState(true);
@@ -53,9 +51,11 @@ function App(){
       {isLoading ? (<Loading />) : 
       (
         <div id="App">
-            <DotRing />        
+            <DotRing/>        
             <Nav visible={scrollDir}/>
+            
             <Page />
+
         </div>
       )}
     </div>

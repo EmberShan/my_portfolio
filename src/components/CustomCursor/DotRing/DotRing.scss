@@ -2,13 +2,23 @@
 $ring_size: 70px;
 $dot_size: 10px;
 
-.cursor{
-  display: none;
-}
-
 @media screen and (min-width: 1140px) {
   .cursor{
-    display: block;
+    transition: opacity .3 ease-in-out;
+    &.cursor--hidden {
+      opacity: 0;
+    }
+    &.cursor--clicked{
+      transition: all .3 cubic-bezier(0.075, 0.82, 0.165, 1);
+      .ring{
+        width: $ring_size + 20px;
+        height: $ring_size + 20px;
+        background-color: #fefefe;
+      }
+      .dot{
+        opacity: 0;
+      }
+    }
   }
 
   .ring, .dot{
@@ -23,6 +33,7 @@ $dot_size: 10px;
       border: 2px solid c.$font1;
       border-radius: 100%;
       transform: translate(-50%, -50%);
+
       -webkit-transition-duration: 100ms;
       transition-duration: 200ms; //speed that the ring will follow the dot
       -webkit-transition-timing-function: ease-out;
