@@ -1,0 +1,83 @@
+$cursor: #FFA00F;
+// Navbar colors 
+$nav-bg: #FFA00F;
+$link: #FDF0D5;
+
+// bg and text colros 
+$bg1: #003049;
+$font1: #FDF0D5;
+$bg2: #001926; 
+$font2: #F1FAFF;
+
+:export {
+    cursor: $cursor;
+    nav-bg: $nav-bg;
+    link: $link;
+    bg1: $bg1;
+    font1: $font1;
+    bg2: $bg2;
+    font2: $font2;
+}
+
+// alignment 
+@mixin center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin full-page {
+    height: 100vh;
+    width: 100vw;
+}
+@mixin align-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+@mixin align-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+// styles
+@mixin no-text-style{
+    list-style: none;
+    text-decoration: none;
+    color: $font1;
+}
+
+// mobile text
+@mixin title-mobile{
+    font-family: 'Squada One', sans-serif;
+    font-size: 3rem;
+}
+@mixin subtitle-mobile {
+    font-family: 'Squada One', sans-serif;
+    font-size: 1.5rem;
+}
+@mixin paragraph-mobile{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1rem;
+}
+
+// tablet + laptop 
+@mixin title {
+    font-size: 9rem;
+}
+@mixin subtitle {
+    font-size: 2rem;
+}
+@mixin paragraph {
+    font-size: 1rem;
+}
+@mixin arrow-style {
+    margin-top: 3.5rem;
+    font-size: 4rem;
+    color: map.get($colors, "font2");
+    mix-blend-mode: screen;
+}
+

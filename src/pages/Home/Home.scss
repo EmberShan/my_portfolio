@@ -1,0 +1,59 @@
+@use '../../components/Constant.scss' as c;
+
+// mobile first
+.fa-solid{
+    mix-blend-mode: difference;
+}
+
+#home{
+    background-color: c.$bg1;
+    color: c.$font1;
+
+    .container{
+        
+        .school{
+            font-size: 0.8rem; 
+            color: c.$font2;
+            mix-blend-mode: screen;
+
+            .fa-solid{
+                padding-right: 10px;
+            }
+        }
+        .email a{
+            font-size: .8rem;
+        }
+
+
+    }
+
+}
+
+
+// medium screen 
+@media screen and (min-width: 768px) {
+    #home{
+        .container{
+            .school{
+                align-self: flex-end;
+            }
+
+            .email {
+                a{
+                    font-size: 1.3rem;
+                }
+            }
+            .alignStart{
+                align-self: flex-start;
+            }
+            
+        }
+        
+    }
+}
+
+
+// large screen to expand the nav for 13+inch screens
+@media screen and (min-width: 1140px) {
+
+}

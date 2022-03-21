@@ -1,0 +1,40 @@
+@use '../Constant' as c;
+$cursor-size: 50px;
+// $dot-size: 15px;
+
+// mobile first 
+.cursor{
+    display: none;
+}
+
+// cursor for medium+ screen
+@media screen and (min-width: 768px) {
+    .cursor{
+        display: block;
+
+        z-index: 1000;
+        border-radius: 50%; // circle
+        width: $cursor-size;
+        height: $cursor-size;
+        background-color: c.$cursor;
+        pointer-events: none;
+        overflow: hidden;
+        transform: translate3d(0, 0, 0);
+        position: fixed;
+
+        mix-blend-mode: difference;
+    
+        // dot in the middle
+        // .dot{
+        //     content: "";
+        //     position: absolute;
+        //     width: $dot-size;
+        //     height: $dot-size;
+        //     border-radius: 50%;
+        //     background-color: const.$link-color;
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-50%, -50%);
+        // }
+    }
+}
