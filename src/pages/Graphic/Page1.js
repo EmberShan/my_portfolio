@@ -13,7 +13,7 @@ const Page1 = () => {
         <Icon className='adobe-container' amount={adobe.length}>
             {adobe.map(( item, index ) => {
                 return(
-                <img className={item.name} key={index} src= {item.src}/>
+                <img className={item.name} key={index} src= {item.src} alt={item.name}/>
                 )
             })}  
         </Icon>

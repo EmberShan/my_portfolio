@@ -21,7 +21,7 @@ function CustomCarousel(props)
         >
             {props.imgs.map((img, index) => (
                 <Carousel.Item>
-                    <img src={img.src} style={imgStyle} key={index}></img> 
+                    <img src={img.src} style={imgStyle} key={index} alt={img.name}></img> 
                 </Carousel.Item>
             ))}
         </Carousel>

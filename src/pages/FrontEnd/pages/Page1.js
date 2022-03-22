@@ -14,7 +14,7 @@ const Page1 = () => {
       <Icon className='webskill-container' amount={webSkills.length}>
         {webSkills.map(( item, index ) => {
             return(
-              <img className={item.name} key={index} src= {item.src}/>
+              <img className={item.name} key={index} src= {item.src} alt={item.name}/>
             )
         })}  
       </Icon>

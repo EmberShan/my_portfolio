@@ -39,18 +39,23 @@ export const adobe = [
 
 export const graphic_imgs = [
     {
+        name: 'magazine cover',
         src: require('./pics/graphics/1.jpg'),
     },
     {
+        name: 'magazine spreads',
         src: require('./pics/graphics/2.jpg'),
     }, 
     {
+        name: 'brochure spreads',
         src: require('./pics/graphics/3.jpg'),
     }, 
     {
+        name: 'brochure spreads',
         src: require('./pics/graphics/4.jpg'),
     },
     {
+        name: 'brochure spreads',
         src: require('./pics/graphics/5.jpg'),
     }, 
 ]
@@ -58,9 +63,11 @@ export const graphic_imgs = [
 
 export const programmer = [
     {
+        name: 'android studio',
         src: require('./pics/programmer/1.jpg'),
     },
     {
+        name: 'computer graphics',
         src: require('./pics/programmer/2.jpg'),
     },
 ]
