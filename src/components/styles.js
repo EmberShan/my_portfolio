@@ -18,7 +18,9 @@ export const FullPage = styled.div`
     overflow: hidden; 
     padding: ${(props) => (props.padding) ? (props.padding) : '0'};   
 
-    scroll-snap-align: start;
+    @media screen and (min-width: 1140px) {
+        scroll-snap-align: start;
+    }
 `
 
 // can pass in: long, center, blue
