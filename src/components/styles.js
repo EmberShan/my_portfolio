@@ -181,3 +181,7 @@ export const FullHeightImg = styled.div`
     }
     
 `
+
+export const popUpBox = styled.span`
+    
+`
