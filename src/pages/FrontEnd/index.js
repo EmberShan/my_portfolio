@@ -7,7 +7,7 @@ const FrontEnd = () => {
     <div id='frontend'>
       <Page1 />
       <Page2 />
-      <Page3 />
+      {/* <Page3 /> */}
     </div>
   )
 }

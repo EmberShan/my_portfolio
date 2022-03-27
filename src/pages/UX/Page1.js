@@ -4,7 +4,7 @@ import './UX.scss'
 
 const UX = () => {
   return (
-    <FullPage dark>
+    <FullPage>
         <Title> UX/UI Designer </Title>
         <Title center long> 
             Always <br></br>

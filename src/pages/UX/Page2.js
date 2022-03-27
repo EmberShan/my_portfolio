@@ -5,7 +5,7 @@ import { FullPage, FullHeightImg, Title, FullBgImg } from '../../components/styl
 
 const Page2 = () => {
   return (
-    <FullPage>
+    <FullPage dark>
       <Title long style={{
           position: 'absolute', 
           bottom: '20%', 
