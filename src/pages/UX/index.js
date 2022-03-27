@@ -1,20 +1,14 @@
 import React from 'react'
-import { FullPage, Title, Arrow } from '../../components/styles'
 import './UX.scss'
+import Page1 from '../UX/Page1'
+import Page2 from '../UX/Page2'
 
 const UX = () => {
   return (
-    <FullPage dark id='ux'>
-        <Title> UX Researcher </Title>
-        <Title center long> 
-            Always <br></br>
-            Deign <br></br>
-            for Users <br></br>
-        </Title>
-
-        <Arrow className='arrow'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
-
-    </FullPage>
+    <div id='ux'>
+      <Page1 />
+      <Page2 />
+    </div>
   )
 }
 

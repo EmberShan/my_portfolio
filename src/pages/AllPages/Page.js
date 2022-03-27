@@ -19,6 +19,7 @@ const Page = () => {
       <Programming />
 
       <Contact />
+      
     </main>
   )
 }

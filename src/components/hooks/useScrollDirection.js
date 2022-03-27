@@ -19,6 +19,8 @@ export default function useScrollDirection() {
             setScrollDir(scrollY > lastScrollY ? "false" : "true");
             lastScrollY = scrollY > 0 ? scrollY : 0;
             ticking = false;
+
+            
         };
 
         const onScroll = () => {
@@ -36,3 +38,5 @@ export default function useScrollDirection() {
     }, [scrollDir]);
 
 }
+
+

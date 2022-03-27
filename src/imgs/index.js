@@ -71,3 +71,11 @@ export const programmer = [
         src: require('./pics/programmer/2.jpg'),
     },
 ]
+
+
+export const ui = [
+    {
+        name: 'mock up',
+        src: require('./pics/ui/mdp_mockup.png'),
+    }
+]

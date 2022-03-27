@@ -10,7 +10,7 @@ export const MenuItems = [
         className: 'nav-links',
     },
     {
-        title: 'UX', 
+        title: 'UI/UX', 
         url: '#ux', 
         className: 'nav-links',
     },

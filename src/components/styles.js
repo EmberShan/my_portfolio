@@ -182,6 +182,22 @@ export const FullHeightImg = styled.div`
     
 `
 
+
+export const FullBgImg = styled.div`
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    background: url(${(props) => (props.src) ? (props.src) : 'none'}); 
+    background-position: ${(props) => (props.pos) ? (props.pos) : 'center'}; 
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+`
+
+
 export const popUpBox = styled.span`
     
 `
