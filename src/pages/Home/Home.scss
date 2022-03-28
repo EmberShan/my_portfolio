@@ -1,4 +1,5 @@
 @use '../../components/Constant.scss' as c;
+@use '../../components/animations/strikethrough.scss' as a;
 
 // mobile first
 .fa-solid{
@@ -24,6 +25,9 @@
             font-size: .8rem;
         }
 
+        .mobile_hide{
+            display: none;
+        }
 
     }
 
@@ -41,10 +45,41 @@
             .email {
                 a{
                     font-size: 1.3rem;
+                    position: relative;
                 }
             }
             .alignStart{
                 align-self: flex-start;
+            }
+
+
+            .github{
+
+                display: inline-block;
+
+                color: c.$font1; 
+                text-decoration: none;
+                margin-top: 10px;
+                align-self: flex-start;
+                font-size: 1.5rem;
+    
+                position: relative;
+                transition: transform .5s ease;
+
+                    
+            }
+
+
+            .github, .email a{
+                i{
+                    padding-right: 10px;
+                }
+                &:hover{
+                    transform: translateY(-5%); 
+                    &::after{
+                        @include a.strikethrough;
+                    }
+                }
             }
             
         }

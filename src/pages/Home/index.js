@@ -25,6 +25,12 @@ const Home = () => {
             <a href="mailto: embershan3@gmail.com"> embershan3@gmail.com </a>
           </Email>
         </div>
+
+        
+        <a className='github mobile_hide' href="https://github.com/EmberShan/my_portfolio" target={'_blank'}>
+          <i class="fab fa-github"></i>
+          <span> Check the code for this React portfolio website </span>
+        </a>
         
       </Container>
 

@@ -28,7 +28,7 @@ export const Title = styled.h1`
     font-family: 'Squada One', sans-serif;
     font-size: ${ ({long}) => (long ? `1.5rem` : `3rem` ) };
     color: ${ ({blue}) => (blue ? c.font2 : c.font1 ) };
-    line-height: 2em;
+    // line-height: 2em;
     text-align: ${ ({center}) => (center ? 'center' : 'start' ) };
     margin-bottom: 0;
 
