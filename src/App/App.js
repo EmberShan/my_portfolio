@@ -10,7 +10,7 @@ import Project2 from '../Detail/project2';
 import Impressionism from '../Detail/impressionism';
 
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -26,7 +26,7 @@ function App(){
       <DotRing/> 
       {isLoading ? (<Loading />) : 
       (
-        <BrowserRouter>
+        <HashRouter basename={'/'}>
         <ScrollToTop>
         <Routes>
             <Route path="/" element={<Page />} />
@@ -35,7 +35,7 @@ function App(){
           </Routes>
         </ScrollToTop>
           
-        </BrowserRouter>
+        </HashRouter>
       )}
     </div>
   );

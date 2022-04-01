@@ -77,7 +77,7 @@ export const Email = styled.span`
 `
 
 // can pass in: rotate
-export const Arrow = styled.a`
+export const Arrow = styled.span`
     i{
         margin-top: 3rem;
         font-size: 3rem;

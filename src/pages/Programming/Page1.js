@@ -1,5 +1,6 @@
 import React from 'react'
 import { FullPage, SubTitle, Title, Arrow } from '../../components/styles'
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Page1 = () => {
   return (
@@ -12,7 +13,9 @@ const Page1 = () => {
       </SubTitle>
       
       <div>
-        <Arrow className='arrow' href='#programming1'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
+        <Link to="/#programming1">
+          <Arrow className='arrow'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
+        </Link>
       </div>
 
     </FullPage>

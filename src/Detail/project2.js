@@ -7,7 +7,7 @@ export default function Project2() {
   // const navigate = useNavigate();
 
   return (
-    <div>
+    <div id='project2'>
       
       <Context>
         <div className='btnWrapper'>
@@ -163,11 +163,12 @@ export default function Project2() {
 
 
       <Footer>
-        <a href='#'>
-          <i class="fa-solid fa-angle-up"></i>
-          Back to Top
-        </a>
-        
+        <HashLink smooth to="#">
+          <a>
+            <i class="fa-solid fa-angle-up"></i>
+            Back to Top
+          </a>
+        </HashLink>
       </Footer>
 
     </div>

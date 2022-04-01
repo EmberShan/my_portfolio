@@ -1,6 +1,7 @@
 import React from 'react'
 import './Home.scss'
 import {Title, FullPage, SubTitle, Arrow, Email, Container} from '../../components/styles'
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 const Home = () => {
@@ -29,7 +30,9 @@ const Home = () => {
       </Container>
 
       <div className='arrow-container'>
-        <Arrow className='arrow' href='#ui'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
+        <Link to="/#ui">
+          <Arrow className='arrow'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
+        </Link>
       </div>
       
     </FullPage>

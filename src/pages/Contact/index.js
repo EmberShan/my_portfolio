@@ -1,6 +1,7 @@
 import React from 'react'
 import {FullPage, Title, Arrow, Email} from '../../components/styles'
 import './Contact.scss'
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 const Contact = () => {
@@ -13,9 +14,12 @@ const Contact = () => {
         <a href="mailto: embershan3@gmail.com"> embershan3@gmail.com </a>
       </Email>
 
-      <Arrow rotate className='arrow' href='#'> 
-        <i class="fa-solid fa-circle-arrow-down"></i> 
-      </Arrow>
+      <Link to="/">
+        <Arrow rotate className='arrow'> 
+          <i class="fa-solid fa-circle-arrow-down"></i> 
+        </Arrow>
+      </Link>
+      
     </FullPage>
   )
 }

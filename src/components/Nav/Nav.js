@@ -5,6 +5,9 @@ import './Nav.scss'
 import { MenuItems } from "./MenuItems";
 import useWindowDimensions from './windowDimension'
 import { MouseContext } from '../context/mouse-context'
+import { HashLink as Link } from 'react-router-hash-link';
+
+
 
 const Nav = (props) => {
     const [clicked, setClicked] = useState(false);
@@ -46,7 +49,9 @@ const Nav = (props) => {
                             onMouseEnter={() => cursorChangeHandler("hovered")}
                             onMouseLeave={() => cursorChangeHandler("")}
                         > 
-                            <a onClick={togglerClicked} className={item.className} href={item.url}>{item.title}</a> 
+                            <Link to={'/' + item.url}>
+                                <a onClick={togglerClicked} className={item.className}>{item.title}</a> 
+                            </Link>
                         </li>
                     )
                 })}  

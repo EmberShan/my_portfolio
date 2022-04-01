@@ -3,6 +3,8 @@ import Page1 from './Page1'
 import Page2 from './Page2'
 import { FullPage, Title, FullBgImg, Arrow } from '../../components/styles'
 import Page3 from '../FrontEnd/index'
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const UI = () => {
   return (
@@ -15,7 +17,9 @@ const UI = () => {
             Design for Users <br></br>
         </Title>
 
-        <Arrow className='arrow' href='#ui1'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
+        <Link to="/#ui1">
+          <Arrow className='arrow'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
+        </Link>
 
       </FullPage>
 

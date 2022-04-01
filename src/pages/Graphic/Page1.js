@@ -2,6 +2,8 @@ import React from 'react'
 import { FullPage, Title, Arrow, Container, Icon, SubTitle } from '../../components/styles'
 import './Graphic.scss'
 import {adobe} from '../../imgs';
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const Page1 = () => {
   return (
@@ -21,8 +23,10 @@ const Page1 = () => {
         <SubTitle center long className='subtitle-margin' style={{marginTop: '3%'}}> 
             Contrast - Bold - Details - Gestalt  
         </SubTitle>
-
-        <Arrow className='arrow' href='#graphics1'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
+        
+        <Link to="/#graphics1">
+            <Arrow className='arrow'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
+        </Link>
 
     </FullPage>
   )

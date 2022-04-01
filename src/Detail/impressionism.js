@@ -219,10 +219,13 @@ const Impressionism = () => {
 
 
       <Footer>
-        <a href='#'>
-          <i class="fa-solid fa-angle-up"></i>
-          Back to Top
-        </a>
+        <HashLink smooth to="#">
+            <a href='#'>
+            <i class="fa-solid fa-angle-up"></i>
+            Back to Top
+            </a>
+        </HashLink>
+        
         
       </Footer>
 
