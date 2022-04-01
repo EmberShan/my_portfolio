@@ -40,22 +40,29 @@ const Nav = (props) => {
                 </div>
             </div>
 
-            <ul className={clicked ? "nav-menu active" : "nav-menu"}>
+            <div className={clicked ? "nav-menu active" : "nav-menu"}>
                 {/* looping through the menu items */}
                 {MenuItems.map(( item, index ) => {
                     return(
-                        <li key={index} className="title"
-                            onMouseEnter={() => cursorChangeHandler("hovered")}
-                            onMouseLeave={() => cursorChangeHandler("")}
-                        > 
-                            <Link to={'/' + item.url} className={'nav_links '+ item.className}
+                        // <li key={index} className="title"
+                        //     onMouseEnter={() => cursorChangeHandler("hovered")}
+                        //     onMouseLeave={() => cursorChangeHandler("")}
+                        // > 
+                            <Link 
+                                key={index}
+                                to={'/' + item.url} 
+                                className={'nav_links '+ item.className}
                                 onClick={togglerClicked}
-                            > {item.title} </Link>
+                                onMouseEnter={() => cursorChangeHandler("hovered")}
+                                onMouseLeave={() => cursorChangeHandler("")}
+                            > 
+                                {item.title}
+                            </Link>
                             
-                        </li>
+                        // </li>
                     )
                 })}  
-            </ul>
+            </div>
 
         </nav>
     )
