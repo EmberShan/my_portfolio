@@ -9,6 +9,7 @@ import Graphic from '../Graphic'
 import Programming from '../Programming'
 import Nav from '../../components/Nav/Nav'
 
+
 const Page = () => {
   return (
 
@@ -16,13 +17,14 @@ const Page = () => {
       <Nav visible={true}/>
       <main>
 
-        <Home />
-        <UI />
-        <UX />
-        <Graphic />
-        <Programming />
+      
+      <Home />
+      <UI />
+      <UX />
+      <Graphic />
+      <Programming />
 
-        <Contact />
+      <Contact />
 
       </main>
     </div>

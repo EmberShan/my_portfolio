@@ -42,7 +42,7 @@ $nav-toggler-size: 50px; //width and height
         li{
             padding-right: 0;
             margin-right: 0;
-            a{
+            .nav_links{
                 font-size: 1.5rem;
                 text-decoration: none;
                 color: c.$link;
@@ -118,15 +118,15 @@ $nav-toggler-size: 50px; //width and height
 @media screen and (min-width: 768px) {
     .NavBar{ 
         // essential for the stikethrough 
-        a{
+        .nav_links{
             position: relative;
             font-size: 1.5rem;
         }
         li:hover{
-            a{
+            .nav_links{
                 opacity: .8;
             }
-            a::after{
+            .nav_links::after{
                 @include a.strikethrough;
             }
     }
