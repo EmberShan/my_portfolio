@@ -76,7 +76,7 @@ export const Summary = styled.div`
     font-family: 'Roboto', sans-serif;
     display: flex; 
     flex-direction: column; 
-    padding: 5% 15%; 
+    padding: 5% 25%; 
     
     .text{
         line-height: 2; 
@@ -102,11 +102,11 @@ export const Content = styled.div`
     font-family: 'Roboto', sans-serif;
     display: flex; 
     flex-direction: column; 
-    padding: 0 5%; 
+    padding: 0; 
     
     div{
         line-height: 2; 
-        padding: 3% 7%; 
+        padding: 3% 20%; 
 
         h2{
             font-size: 2rem;
@@ -159,7 +159,7 @@ export const Footer = styled.div`
 `
 
 
-export const VideoWrapper = styled.div`
+export const VideoWrapper = styled.span`
     overflow: hidden;
     position: relative;
     top: 0;
@@ -169,12 +169,13 @@ export const VideoWrapper = styled.div`
     width: 100%;
     height: 100%;
 
-    padding: 0; 
+    padding: 5% 0; 
     margin: 0; 
     display: flex; 
     align-items: center; 
     gap: 20px; 
 `
+
 
 
 export const Video = styled.video`
@@ -191,4 +192,5 @@ export const Video = styled.video`
         display: ${ ({mobile_hide}) => (mobile_hide ? 'none' : 'block')};
         object-position: center; 
     }
+
 `

@@ -6,7 +6,7 @@ import CustomCarousel from '../../components/Carousel/index'
 
 const Page2 = () => {
   return (
-    <FullPage dark>
+    <FullPage dark id='programming1'>
       <CustomCarousel imgs={programmer} pos={'5%'}/>
     </FullPage>
   )

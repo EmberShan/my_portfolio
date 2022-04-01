@@ -7,7 +7,7 @@ import {Button} from '../../components/Button/Button';
 const Page2 = () => {
 
   return (
-    <FullPage dark>
+    <FullPage dark id='ui1'>
 
       <div style={{
         position: 'absolute', 

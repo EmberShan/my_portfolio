@@ -105,7 +105,7 @@ const Impressionism = () => {
             </p>
           </div>
 
-          <img src={require('./imgs/impressionism/1.png')} alt="Miro affinity diagram"/>
+          <img src={require('./imgs/impressionism/1.png')} alt=""/>
         
         <div> 
         <h2> 2. Mobile First </h2>
@@ -120,12 +120,17 @@ const Impressionism = () => {
                 choose a product or subscribe to the newsletter). 
                 <br></br>
                 <br></br>
-                <VideoWrapper>
-                    Considering many people would probably only skim through the titles/first lines of the passages. 
-                    I hide most of the test unless clicking "read more". This makes the website seem more manageable
+                
+
+                
+            </p>
+
+            <VideoWrapper>
+                    Considering that many people would probably only skim through the titles/first lines of the passages. 
+                    I hide most of the text unless clicking "read more". This makes the website seem more manageable
                     and effortless to read. 
                     
-                    <Video 
+                    <Video mobile_hide
                         autoPlay={true} 
                         loop={true}
                         controls={false} 
@@ -138,15 +143,77 @@ const Impressionism = () => {
                     />
                 </VideoWrapper>
 
+            <p>
                 Another challenge caused by the small screen size is that the buttons and 
                 links are more difficult to click. Because of this, I hide arrows and change buttons 
                 to drop-down menu on mobile and tablet. 
-
             </p>
         </div>
+
+
+
+        <img src={require('./imgs/impressionism/3.png')} alt=""/>
           
-        
-        
+        <div>
+        <h2> 3. Tablet Design </h2>
+            <p> 
+                I think tablet is a combinatin of mobile and desktop. 
+                Tablet is larger than the mobile, but it is still a touchscreen. 
+                I tried to keep the number of clickable UI elements low so that users 
+                have a lower chance accidentally clicking (hiding carousels etc). 
+                <br></br>
+                <br></br>
+                
+            </p>
+        </div>
+
+
+        <img src={require('./imgs/impressionism/4.png')} alt=""/>
+
+        <div>
+        <h2> 4. Desktop Design </h2>
+            <p> 
+                Desktop has much more freedom and cool effects compared to tablet and mobile. 
+                I love exploring different effects to make the website as interactive as possible. 
+            </p>
+        </div>
+
+        <Video mobile_hide
+            autoPlay={true} 
+            loop={true}
+            controls={false} 
+            playsInline
+            muted 
+            src= {require('./imgs/impressionism/5.mov')}
+            type="video/mov" 
+
+            className='video'
+        />
+
+        <Video mobile_hide
+            autoPlay={true} 
+            loop={true}
+            controls={false} 
+            playsInline
+            muted 
+            src= {require('./imgs/impressionism/6.mov')}
+            type="video/mov" 
+
+            className='video'
+        />
+
+        <Video mobile_hide
+            autoPlay={true} 
+            loop={true}
+            controls={false} 
+            playsInline
+            muted 
+            src= {require('./imgs/impressionism/7.mov')}
+            type="video/mov" 
+
+            className='video'
+        />
+
 
       </Content>
 

@@ -22,7 +22,7 @@ const Page1 = () => {
             Contrast - Bold - Details - Gestalt  
         </SubTitle>
 
-        <Arrow className='arrow'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
+        <Arrow className='arrow' href='#graphics1'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
 
     </FullPage>
   )

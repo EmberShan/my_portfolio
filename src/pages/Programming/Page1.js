@@ -12,7 +12,7 @@ const Page1 = () => {
       </SubTitle>
       
       <div>
-        <Arrow className='arrow'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
+        <Arrow className='arrow' href='#programming1'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
       </div>
 
     </FullPage>

@@ -15,7 +15,7 @@ const UI = () => {
             Design for Users <br></br>
         </Title>
 
-        <Arrow className='arrow'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
+        <Arrow className='arrow' href='#ui1'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
 
       </FullPage>
 

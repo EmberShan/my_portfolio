@@ -13,7 +13,7 @@ const Contact = () => {
         <a href="mailto: embershan3@gmail.com"> embershan3@gmail.com </a>
       </Email>
 
-      <Arrow rotate className='arrow'> 
+      <Arrow rotate className='arrow' href='#'> 
         <i class="fa-solid fa-circle-arrow-down"></i> 
       </Arrow>
     </FullPage>

@@ -2,7 +2,6 @@ import './Page.scss';
 
 import React from 'react'
 import Home from '../Home/index'
-import FrontEnd from '../FrontEnd/index'
 import Contact from '../Contact/index'
 import UX from '../UX/index'
 import UI from '../UI/index'

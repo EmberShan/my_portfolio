@@ -8,7 +8,7 @@ import CustomCarousel from '../../components/Carousel/index'
 const Page2 = () => {
 
   return (
-    <FullPage dark display={'grid'}>
+    <FullPage dark display={'grid'} id="graphics1">
       <CustomCarousel imgs={graphic_imgs}/>
     </FullPage>
   )

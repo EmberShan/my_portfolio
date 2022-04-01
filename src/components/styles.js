@@ -77,14 +77,22 @@ export const Email = styled.span`
 `
 
 // can pass in: rotate
-export const Arrow = styled.span`
+export const Arrow = styled.a`
     i{
         margin-top: 3rem;
         font-size: 3rem;
         color: ${c.font2};
         mix-blend-mode: screen;
         transform: ${ ({rotate}) => (rotate ? 'rotate(180deg)' : 'rotate(0)' ) };
+        transition: color .4s ease; 
     }
+
+    &:hover{
+        i{
+            color: red; 
+        }
+    }
+
     @media screen and (min-width: 768px) {
         i{
             font-size: 4rem;

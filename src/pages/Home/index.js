@@ -29,7 +29,7 @@ const Home = () => {
       </Container>
 
       <div className='arrow-container'>
-        <Arrow className='arrow'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
+        <Arrow className='arrow' href='#ui'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
       </div>
       
     </FullPage>
