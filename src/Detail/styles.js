@@ -94,6 +94,11 @@ export const Summary = styled.div`
         height: auto; 
     }
 
+
+    @media screen and (max-width: 768px) {
+        padding: 5% 10%;    
+    }
+
     
 `
 

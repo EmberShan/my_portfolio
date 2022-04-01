@@ -50,7 +50,7 @@ const Nav = (props) => {
                             onMouseLeave={() => cursorChangeHandler("")}
                         > 
                             <Link to={'/' + item.url}>
-                                <a onClick={togglerClicked} className={item.className}>{item.title}</a> 
+                                <a onClick={togglerClicked} className={item.className} href={item.url}>{item.title}</a> 
                             </Link>
                         </li>
                     )
