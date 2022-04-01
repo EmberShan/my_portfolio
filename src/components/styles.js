@@ -26,7 +26,7 @@ export const FullPage = styled.div`
 // can pass in: long, center, blue
 export const Title = styled.h1`
     font-family: 'Squada One', sans-serif;
-    font-size: ${ ({long}) => (long ? `1.5rem` : `3rem` ) };
+    font-size: ${ ({long}) => (long ? `2rem` : `3rem` ) };
     color: ${ ({blue}) => (blue ? c.font2 : c.font1 ) };
     // line-height: 2em;
     text-align: ${ ({center}) => (center ? 'center' : 'start' ) };
@@ -157,9 +157,11 @@ export const VideoBg = styled.video`
     -o-object-fit: ${(props) => (props.objectFit) ? (props.objectFit) : 'cover'}; 
     object-fit: ${(props) => (props.objectFit) ? (props.objectFit) : 'cover'};
     background: ${(props) => (props.bgColor) ? (props.bgColor) : 'white'};
+    object-position: ${(props) => (props.pos) ? (props.pos) : 'center'};
 
     @media screen and (max-width: 576px) {
         display: ${ ({mobile_hide}) => (mobile_hide ? 'none' : 'block')};
+        object-position: center; 
     }
 `
 

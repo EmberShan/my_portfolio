@@ -11,7 +11,7 @@ import MouseContextProvider from "./components/context/mouse-context";
 ReactDOM.render(
   <React.StrictMode>
     <MouseContextProvider>
-      <App />
+        <App />
     </MouseContextProvider>
   </React.StrictMode>,
   document.getElementById('root')

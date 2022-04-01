@@ -7,7 +7,7 @@ const Page1 = () => {
   return (
     <FullPage id='ux'>
         <Title center> 
-            Graphic Design
+            Graphic Designer
         </Title>
 
         <Icon className='adobe-container' amount={adobe.length}>

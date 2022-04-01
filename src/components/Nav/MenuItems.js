@@ -5,12 +5,12 @@ export const MenuItems = [
         className: 'nav-links',
     },
     {
-        title: 'FrontEnd', 
-        url: '#frontend', 
+        title: 'UI', 
+        url: '#ui', 
         className: 'nav-links',
     },
     {
-        title: 'UI/UX', 
+        title: 'UX', 
         url: '#ux', 
         className: 'nav-links',
     },

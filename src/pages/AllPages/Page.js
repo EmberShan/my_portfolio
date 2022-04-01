@@ -1,26 +1,33 @@
-import './Page.scss'
+import './Page.scss'; 
 
 import React from 'react'
 import Home from '../Home/index'
 import FrontEnd from '../FrontEnd/index'
 import Contact from '../Contact/index'
 import UX from '../UX/index'
+import UI from '../UI/index'
 import Graphic from '../Graphic'
 import Programming from '../Programming'
+import Nav from '../../components/Nav/Nav'
 
 const Page = () => {
   return (
-    <main>
 
-      <Home />
-      <FrontEnd />
-      <UX />
-      <Graphic />
-      <Programming />
+    <div> 
+      <Nav visible={true}/>
+      <main>
 
-      <Contact />
-      
-    </main>
+        <Home />
+        <UI />
+        <UX />
+        <Graphic />
+        <Programming />
+
+        <Contact />
+
+      </main>
+    </div>
+    
   )
 }
 

@@ -1,14 +1,26 @@
 import React from 'react'
 import './UX.scss'
-import Page1 from '../UX/Page1'
-import Page2 from '../UX/Page2'
+import { FullPage, Title, Arrow } from '../../components/styles'
+import {Button} from '../../components/Button/Button';
+
 
 const UX = () => {
   return (
-    <div id='ux'>
-      <Page1 />
-      <Page2 />
-    </div>
+    <FullPage dark id="ux">
+        <Title> UX Researcher </Title>
+        <Title center long style={{marginBottom: '3%'}}> 
+            Empathy -
+            Communicate -
+            Analyze 
+        </Title>
+
+        <Button text="Learn More" 
+          pos={'relative'}
+          route={'/project2'}
+        > </Button>
+
+
+    </FullPage>
   )
 }
 

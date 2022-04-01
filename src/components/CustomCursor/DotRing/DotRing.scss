@@ -1,5 +1,5 @@
 @use '../../Constant' as c;
-$ring_size: 70px;
+$ring_size: 60px;
 $dot_size: 10px;
 
 @media screen and (min-width: 1140px) {
@@ -19,6 +19,7 @@ $dot_size: 10px;
         opacity: 0;
       }
     }
+
   }
 
   .ring, .dot{
@@ -41,6 +42,11 @@ $dot_size: 10px;
       will-change: width, height, transform, border;
       z-index: 999;
       pointer-events: none;
+
+      &.hovered{
+        animation: rotate 1.4s ease infinite;
+        animation-direction: alternate;
+      }
     }
     
     &.dot {
@@ -54,9 +60,21 @@ $dot_size: 10px;
       transform: translate(-50%, -50%);
       z-index: 999;
       pointer-events: none;
+
+      &.hovered{
+        width: $dot_size + 10px;
+        height: $dot_size + 10px;
+      }
+
+    }
+  }
+  
+  @keyframes rotate {
+    100% {
+      width: $ring_size + 30px;
+      height: $ring_size + 30px;
     }
   }
 
-    
 }
 

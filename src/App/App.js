@@ -1,31 +1,41 @@
 import React, { useState, useEffect, useContext } from 'react'
-import Nav from '../components/Nav/Nav'
-import Page from '../pages/AllPages/Page.js'
 import Loading from '../pages/Loading';
 // for custom cursor 
 import DotRing from '../components/CustomCursor/DotRing/DotRing'
 
 import './App.scss';
 
+import Page from '../pages/AllPages/Page.js';
+import Project2 from '../Detail/project2';
+import Impressionism from '../Detail/impressionism';
+
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+
+import ScrollToTop from "./ScrollToTop";
+
 
 function App(){
-  // const { cursorType, cursorChangeHandler } = useContext(MouseContext);
-
   const [isLoading, setIsLoading] = useState(false); 
-  const [scrollDir, setScrollDir] = useState(true);
-  // scrolling down = false, scrolling up = true
 
   return (
     <div className="App">
+      <DotRing/> 
       {isLoading ? (<Loading />) : 
       (
-        <div id="App">
-            <DotRing/>        
-            <Nav visible={true}/>
-            
-            <Page />
-
-        </div>
+        <BrowserRouter>
+        <ScrollToTop>
+        <Routes>
+            <Route path="/" element={<Page />} />
+              <Route path="project2" element={<Project2 />} />
+              <Route path="impressionism" element={<Impressionism />} />
+          </Routes>
+        </ScrollToTop>
+          
+        </BrowserRouter>
       )}
     </div>
   );
