@@ -1,22 +1,28 @@
 import React from 'react'
-import { HashLink } from 'react-router-hash-link';
+
+import { Link } from 'react-scroll';
+import { useNavigate } from 'react-router-dom';
+
 import {Top, Context, Summary, Content, VideoWrapper, Video, Footer} from './styles';
 import v from './imgs/impressionism/2.mov';
 
 const Impressionism = () => {
+  const navigate = useNavigate();
+
+
   return (
-    <div>
+    <div id="impressionismTop">
 
         <Top className='impressionism'>
             <div className='btnWrapper' style={{
                 top: '10%', 
             }}>
-                <HashLink smooth to="/#impressionism">
-                    <button className="backBtn"  > 
-                        <i class="fa-solid fa-angle-left"></i>
-                        <div className='mobile-hide'>Back</div>
-                    </button>  
-                </HashLink> 
+
+                <button className="backBtn" onClick={() => navigate(-1)} > 
+                    <i class="fa-solid fa-angle-left"></i>
+                    <div className='mobile-hide'>Back</div>
+                </button>  
+
             </div>
 
             <h1> Responsive Website</h1> 
@@ -219,12 +225,9 @@ const Impressionism = () => {
 
 
       <Footer>
-        <HashLink smooth to="#">
-            <a href='#'>
+        <Link smooth to="impressionismTop">
             <i class="fa-solid fa-angle-up"></i>
-            Back to Top
-            </a>
-        </HashLink>
+        </Link>
         
         
       </Footer>

@@ -1,22 +1,23 @@
 import React, { useEffect } from 'react'
 import {Context, Summary, Content, Footer} from './styles';
 import './detail.scss'
-import { HashLink } from 'react-router-hash-link';
+
+import { Link } from 'react-scroll';
+import { useNavigate } from 'react-router-dom';
 
 export default function Project2() {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
+    
     <div id='project2'>
       
       <Context>
         <div className='btnWrapper'>
-          <HashLink smooth to="/#ux">
-            <button className="backBtn"  > 
-              <i class="fa-solid fa-angle-left"></i>
-              <div className='mobile-hide'>Back</div>
-            </button>  
-          </HashLink>
+          <button className="backBtn" onClick={() => navigate(-1)} > 
+            <i class="fa-solid fa-angle-left"></i>
+            <div className='mobile-hide'>Back</div>
+          </button>  
 
           <h1> UX research on self-checkout system  </h1>
         </div> 
@@ -163,12 +164,9 @@ export default function Project2() {
 
 
       <Footer>
-        <HashLink smooth to="#">
-          <a>
+        <Link to="project2">
             <i class="fa-solid fa-angle-up"></i>
-            Back to Top
-          </a>
-        </HashLink>
+        </Link>
       </Footer>
 
     </div>

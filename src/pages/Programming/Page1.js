@@ -1,6 +1,6 @@
 import React from 'react'
 import { FullPage, SubTitle, Title, Arrow } from '../../components/styles'
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-scroll';
 
 const Page1 = () => {
   return (
@@ -13,7 +13,7 @@ const Page1 = () => {
       </SubTitle>
       
       <div>
-        <Link to="/#programming1">
+        <Link to="programming1" spy={true}>
           <Arrow className='arrow'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
         </Link>
       </div>

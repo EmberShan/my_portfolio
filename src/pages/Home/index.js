@@ -1,8 +1,7 @@
 import React from 'react'
 import './Home.scss'
 import {Title, FullPage, SubTitle, Arrow, Email, Container} from '../../components/styles'
-import { HashLink as Link } from 'react-router-hash-link';
-
+import { Link } from 'react-scroll';
 
 const Home = () => {
   return (
@@ -30,7 +29,7 @@ const Home = () => {
       </Container>
 
       <div className='arrow-container'>
-        <Link to="/#ui">
+        <Link to="ui" spy={true}>
           <Arrow className='arrow'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
         </Link>
       </div>

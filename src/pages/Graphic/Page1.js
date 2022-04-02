@@ -2,7 +2,7 @@ import React from 'react'
 import { FullPage, Title, Arrow, Container, Icon, SubTitle } from '../../components/styles'
 import './Graphic.scss'
 import {adobe} from '../../imgs';
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-scroll';
 
 
 const Page1 = () => {
@@ -24,7 +24,7 @@ const Page1 = () => {
             Contrast - Bold - Details - Gestalt  
         </SubTitle>
         
-        <Link to="/#graphics1">
+        <Link to="graphics1" spy={true}>
             <Arrow className='arrow'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
         </Link>
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import {FullPage, Title, Arrow, Email} from '../../components/styles'
 import './Contact.scss'
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-scroll';
 
 
 const Contact = () => {
@@ -14,7 +14,7 @@ const Contact = () => {
         <a href="mailto: embershan3@gmail.com"> embershan3@gmail.com </a>
       </Email>
 
-      <Link to="/">
+      <Link to="home" spy={true}>
         <Arrow rotate className='arrow'> 
           <i class="fa-solid fa-circle-arrow-down"></i> 
         </Arrow>
