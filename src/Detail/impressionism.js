@@ -85,8 +85,8 @@ const Impressionism = () => {
                     <li> Understood the limitations and advantages of different screen sizes  </li>
                     <li> Adjust different UI elements for different screens 
                          <br></br> (ex change buttons on desktop to drop-down list on mobile) </li>
-                    <li> Understood the importance of not relying 
-                        only on colors considering colorblind people </li> 
+                    <li> Understood the importance of accessibility (ex not relying 
+                        only on colors considering colorblind people) </li> 
                 </ul>
                 
             </p>
