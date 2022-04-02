@@ -11,6 +11,7 @@ import Impressionism from '../Detail/impressionism';
 
 import {
   HashRouter,
+  BrowserRouter, 
   Routes,
   Route,
 } from "react-router-dom";
@@ -26,16 +27,16 @@ function App(){
       <DotRing/> 
       {isLoading ? (<Loading />) : 
       (
-        <HashRouter basename={'/'}>
-        <ScrollToTop>
-        <Routes>
-            <Route path="/" element={<Page />} />
-              <Route path="project2" element={<Project2 />} />
-              <Route path="impressionism" element={<Impressionism />} />
-          </Routes>
-        </ScrollToTop>
+        <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
+          <ScrollToTop>
+          <Routes>
+              <Route path="/" element={<Page />} />
+                <Route path="project2" element={<Project2 />} />
+                <Route path="impressionism" element={<Impressionism />} />
+            </Routes>
+          </ScrollToTop>
           
-        </HashRouter>
+        </BrowserRouter>
       )}
     </div>
   );
