@@ -6,7 +6,8 @@ import { MenuItems } from "./MenuItems";
 import useWindowDimensions from './windowDimension'
 import { MouseContext } from '../context/mouse-context'
 
-import { HashLink as Link } from 'react-router-hash-link';
+// import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-scroll';
 
 const Nav = (props) => {
     const [clicked, setClicked] = useState(false);
@@ -50,8 +51,12 @@ const Nav = (props) => {
                         // > 
                             <Link 
                                 key={index}
-                                to={`/${item.url}`} 
+                                // to={`/${item.url}`} 
+                                to={item.url} 
+                                spy={true}
+
                                 className={'nav_links '+ item.className}
+
                                 onClick={togglerClicked}
                                 onMouseEnter={() => cursorChangeHandler("hovered")}
                                 onMouseLeave={() => cursorChangeHandler("")}
