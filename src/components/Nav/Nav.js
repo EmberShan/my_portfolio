@@ -50,7 +50,7 @@ const Nav = (props) => {
                         // > 
                             <Link 
                                 key={index}
-                                to={item.url} 
+                                to={`/${item.url}`} 
                                 className={'nav_links '+ item.className}
                                 onClick={togglerClicked}
                                 onMouseEnter={() => cursorChangeHandler("hovered")}

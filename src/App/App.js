@@ -30,9 +30,9 @@ function App(){
         <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
           <ScrollToTop>
           <Routes>
-              <Route path="/" element={<Page />} />
-                <Route path="project2" element={<Project2 />} />
-                <Route path="impressionism" element={<Impressionism />} />
+              <Route exact path="" element={<Page />} />
+              <Route exact path="project2" element={<Project2 />} />
+              <Route exact path="impressionism" element={<Impressionism />} />
             </Routes>
           </ScrollToTop>
           
