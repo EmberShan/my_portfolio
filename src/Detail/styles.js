@@ -130,6 +130,14 @@ export const Content = styled.div`
         margin-bottom: 3%;
     }
 
+
+    @media screen and (max-width: 1200px) {
+        img{
+            width: 100% !important; 
+            height: auto; 
+        }
+    }
+
     
 `
 
@@ -198,4 +206,31 @@ export const Video = styled.video`
         object-position: center; 
     }
 
+`
+
+
+export const ImgWrapper = styled.span`
+    padding: 0 10%; 
+
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: row; 
+
+    width: 100%; 
+    gap: 30px;
+
+    img{
+        max-height: 95vh; 
+        width: auto; 
+        max-width: 45%; 
+    }
+    
+    @media screen and (max-width: 1200px) {
+        flex-direction: column; 
+
+        img{
+            width: 100%; 
+        }
+    }
 `
