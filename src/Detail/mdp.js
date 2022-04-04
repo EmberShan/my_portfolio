@@ -79,6 +79,7 @@ export default function MDP() {
                     <li> Importance of limiting functionalities/information 
                         on one screen to as little as possible </li>
                     <li> Utilized shadows to indicate different layers of elements </li>
+                    <li> Indication of interactivity: using shadows and color (bright blue) </li>
                 </ul>
                 
             </p>
