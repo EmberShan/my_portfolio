@@ -21,10 +21,9 @@ const Page2 = () => {
           Navigation App for <br></br> MotorCity Casino Hotel 
         </Title>
 
-        {/* <Button text="Learn More" 
-          pos={'relative'}
-          route={'/project2'}
-        > </Button> */}
+        <Button pos={'relative'} className="learnmore" 
+        text="Learn More" route={'/mdp'}> </Button>
+
       </div>
 
 

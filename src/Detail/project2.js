@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react'
 import {Context, Summary, Content, Footer} from './styles';
 import './detail.scss'
 
