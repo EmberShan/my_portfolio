@@ -11,7 +11,7 @@ function CustomCarousel(props)
         height: '100vh', 
         width: (props.width ? (props.width) : ('100vw')),
         objectFit: 'cover', 
-        objectPosition: (props.pos ? (props.pos) : ('center')), 
+        // objectPosition: (props.pos ? (props.pos) : ('center')), 
     };
 
     return (
@@ -21,7 +21,16 @@ function CustomCarousel(props)
         >
             {props.imgs.map((img, index) => (
                 <Carousel.Item>
-                    <img src={img.src} style={imgStyle} key={index} alt={img.name}></img> 
+                    <img 
+                        style={{
+                            minHeight: '100vh', 
+                            height: '100vh', 
+                            width: (props.width ? (props.width) : ('100vw')),
+                            objectFit: 'cover',  
+                            objectPosition: img.pos, 
+                        }}
+                        src={img.src} key={index} alt={img.name}>
+                    </img> 
                 </Carousel.Item>
             ))}
         </Carousel>

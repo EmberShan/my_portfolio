@@ -41,22 +41,28 @@ export const graphic_imgs = [
     {
         name: 'magazine cover',
         src: require('./pics/graphics/1.jpg'),
+        pos: 'center', 
     },
     {
         name: 'magazine spreads',
         src: require('./pics/graphics/2.jpg'),
     }, 
     {
-        name: 'brochure spreads',
+        name: 'logo',
         src: require('./pics/graphics/3.jpg'),
+        pos: '10% 40%', 
     }, 
     {
         name: 'brochure spreads',
         src: require('./pics/graphics/4.jpg'),
-    },
+    }, 
     {
         name: 'brochure spreads',
         src: require('./pics/graphics/5.jpg'),
+    },
+    {
+        name: 'brochure spreads',
+        src: require('./pics/graphics/6.jpg'),
     }, 
 ]
 
