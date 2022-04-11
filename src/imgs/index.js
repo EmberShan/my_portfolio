@@ -37,36 +37,6 @@ export const adobe = [
 ]
 
 
-export const graphic_imgs = [
-    {
-        name: 'magazine cover',
-        src: require('./pics/graphics/1.jpg'),
-        pos: 'center', 
-    },
-    {
-        name: 'magazine spreads',
-        src: require('./pics/graphics/2.jpg'),
-    }, 
-    {
-        name: 'logo',
-        src: require('./pics/graphics/3.jpg'),
-        pos: '10% 40%', 
-    }, 
-    {
-        name: 'brochure spreads',
-        src: require('./pics/graphics/4.jpg'),
-    }, 
-    {
-        name: 'brochure spreads',
-        src: require('./pics/graphics/5.jpg'),
-    },
-    {
-        name: 'brochure spreads',
-        src: require('./pics/graphics/6.jpg'),
-    }, 
-]
-
-
 export const programmer = [
     {
         name: 'android studio',
@@ -85,3 +55,64 @@ export const ui = [
         src: require('./pics/ui/mdp_mockup.png'),
     }
 ]
+
+
+// This is for modal on the Graphics page
+export const magazine = [
+    {
+        name: 'magazine cover',
+        src: require('./pics/graphics/magazine/1.jpg'),
+        pos: 'center', 
+    },
+    {
+        name: 'magazine spreads',
+        src: require('./pics/graphics/magazine/2.jpg'),
+    }, 
+    {
+        name: 'magazine spreads',
+        src: require('./pics/graphics/magazine/3.jpg'),
+    }, 
+    {
+        name: 'magazine spreads',
+        src: require('./pics/graphics/magazine/4.jpg'),
+    }, 
+]
+
+export const logo = [
+    {
+        name: 'logo',
+        src: require('./pics/graphics/logo/1.jpg'),
+        pos: '10% 40%', 
+    }, 
+    {
+        name: 'logo',
+        src: require('./pics/graphics/logo/2.jpg'),
+        pos: '10% 40%', 
+    }, 
+    {
+        name: 'logo',
+        src: require('./pics/graphics/logo/3.jpg'),
+        pos: '10% 40%', 
+    }, 
+    {
+        name: 'logo',
+        src: require('./pics/graphics/logo/4.jpg'),
+        pos: '10% 40%', 
+    }, 
+]
+
+export const brochure = [
+    {
+        name: 'brochure spreads',
+        src: require('./pics/graphics/brochure/1.jpg'),
+    }, 
+    {
+        name: 'brochure spreads',
+        src: require('./pics/graphics/brochure/2.jpg'),
+    },
+    {
+        name: 'brochure spreads',
+        src: require('./pics/graphics/brochure/3.jpg'),
+    }, 
+]
+

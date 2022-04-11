@@ -239,10 +239,20 @@ export const Thumbnail = styled.div`
 
         // thumbnails 
         .thumbnail{
+
+            &.pointer:hover{
+                cursor: pointer; 
+            }
+
             width: 40%; 
             height: auto;
             max-height: 90%; 
             overflow: hidden; 
+
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center;
             
             img{
                 width: 100%; 
@@ -252,6 +262,7 @@ export const Thumbnail = styled.div`
              }
     
             h2{
+                text-align: center; 
                 font-size: 1.3rem; 
             }
             .small_title{
@@ -290,11 +301,6 @@ export const Thumbnail = styled.div`
                 width: 100%; 
                 height: auto;
                 margin-bottom: 10%; 
-
-                display: flex; 
-                justify-content: center; 
-                align-items: center; 
-                flex-direction: column; 
             }
         }
     }

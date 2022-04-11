@@ -1,0 +1,6 @@
+.thumbnail-img{
+    transition: all .4s ease;
+    &:hover{
+        filter: sepia(70%);
+    }
+}
