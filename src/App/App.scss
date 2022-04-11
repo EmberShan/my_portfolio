@@ -4,7 +4,7 @@
 
 // mobile first 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: auto !important;
 }
 
 body{
@@ -29,7 +29,7 @@ body{
 // large screen 
 @media screen and (min-width: 1140px) {
     html{
-        scroll-snap-type: y mandatory;
+        // scroll-snap-type: y mandatory;
     }
     // hide original cursor 
     html, body{
