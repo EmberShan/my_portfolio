@@ -263,7 +263,7 @@ export const Thumbnail = styled.div`
     
             h2{
                 text-align: center; 
-                font-size: 1.3rem; 
+                font-size: 1.7rem; 
             }
             .small_title{
                 font-size: 1rem; 
@@ -301,6 +301,10 @@ export const Thumbnail = styled.div`
                 width: 100%; 
                 height: auto;
                 margin-bottom: 10%; 
+                h2{
+                    text-align: center; 
+                    font-size: 1.3rem; 
+                }
             }
         }
     }
