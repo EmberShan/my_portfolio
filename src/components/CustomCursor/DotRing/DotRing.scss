@@ -25,6 +25,8 @@ $dot_size: 10px;
   .ring, .dot{
     mix-blend-mode: difference;
 
+    
+
     &.ring {
       position: fixed;
       top: 0;
@@ -47,6 +49,10 @@ $dot_size: 10px;
         animation: rotate 1.4s ease infinite;
         animation-direction: alternate;
       }
+
+      &.hide{
+        display: none;
+      }
     }
     
     &.dot {
@@ -64,6 +70,10 @@ $dot_size: 10px;
       &.hovered{
         width: $dot_size + 10px;
         height: $dot_size + 10px;
+      }
+
+      &.hide{
+        display: none;
       }
 
     }

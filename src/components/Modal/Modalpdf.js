@@ -1,15 +1,17 @@
+import React, { useContext } from "react";
 import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import {Button} from 'react-bootstrap'
-import React from "react";
 
 import './style.scss'
 
+import { MouseContext } from '../context/mouse-context'
 
 function MyVerticallyCenteredModal(props) {
-
-    return (
+  const { cursorType, cursorChangeHandler } = useContext(MouseContext);
+  
+  return (
       <Modal
         {...props}
         size="lg"
@@ -22,13 +24,13 @@ function MyVerticallyCenteredModal(props) {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            {props.imgs.map((img, index) => (
-                <img src={img.src} key={index} alt={img.name}
-                style={{
-                    width: '100%', 
-                    marginBottom: '10px', 
-                }}></img>
-            ))}
+            {/* need to hide the custom cursor */}
+            <iframe 
+            src={require('../../imgs/resume/resume-Ember.pdf')} 
+            width="100%" height="500px"
+                onMouseEnter={() => cursorChangeHandler("hide")}
+                onMouseLeave={() => cursorChangeHandler("")}
+            ></iframe>
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={props.onHide} style={{
@@ -41,22 +43,20 @@ function MyVerticallyCenteredModal(props) {
   }
 
 
-const CustomModal = (props) => {
+const Modalpdf = (props) => {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
-    <>
-      {/* <Button variant="primary" onClick={() => setModalShow(true)}>
-        Launch vertically centered modal
-      </Button> */}
-
-      <span className="thumbnail-img"
-        onClick={() => setModalShow(true)}
+    <div className="pdf-wrapper">
+      <Button variant="primary" onClick={() => setModalShow(true)}
+        className="pdf-button"
         style={{
-            cursor: 'pointer', 
-        }}>
-          <img src={props.imgs[0].src}></img>
-      </span>
+             
+            
+        }}
+      >
+        Check Resume
+      </Button>
 
       <MyVerticallyCenteredModal
         show={modalShow}
@@ -64,8 +64,8 @@ const CustomModal = (props) => {
         imgs = {props.imgs}
         title = {props.title}
       />
-    </>
+    </div>
   );
 }
 
-export default CustomModal
+export default Modalpdf

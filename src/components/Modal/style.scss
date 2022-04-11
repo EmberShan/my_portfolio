@@ -4,3 +4,28 @@
         filter: sepia(70%);
     }
 }
+
+
+
+.pdf-wrapper{
+    margin-left: auto;
+    margin-right: auto; 
+    .pdf-button{
+        background-color: #003049;
+        cursor: pointer; 
+    }
+}
+
+
+@media screen and (min-width: 1140px) {
+
+    .pdf-wrapper{
+        margin-left: auto;
+        margin-right: 5%; 
+        .pdf-button{
+            background-color: #FFA00F; 
+            cursor: none; 
+        }
+    }
+
+}

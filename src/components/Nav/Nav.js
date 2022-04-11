@@ -9,6 +9,8 @@ import { MouseContext } from '../context/mouse-context'
 // import { HashLink as Link } from 'react-router-hash-link';
 import { Link } from 'react-scroll';
 
+import Modalpdf from "../Modal/Modalpdf";
+
 const Nav = (props) => {
     const [clicked, setClicked] = useState(false);
     const { width } = useWindowDimensions();
@@ -17,7 +19,6 @@ const Nav = (props) => {
 
     const togglerClicked = () => {
         setClicked((state) => (state === true ? false : true));
-        console.log(clicked);
     }
 
     return (
@@ -45,28 +46,24 @@ const Nav = (props) => {
                 {/* looping through the menu items */}
                 {MenuItems.map(( item, index ) => {
                     return(
-                        // <li key={index} className="title"
-                        //     onMouseEnter={() => cursorChangeHandler("hovered")}
-                        //     onMouseLeave={() => cursorChangeHandler("")}
-                        // > 
-                            <Link 
-                                key={index}
-                                // to={`/${item.url}`} 
-                                to={item.url} 
-                                spy={true}
+                        <Link 
+                            key={index}
+                            to={item.url} 
+                            spy={true}
 
-                                className={'nav_links '+ item.className}
+                            className={'nav_links '+ item.className}
 
-                                onClick={togglerClicked}
-                                onMouseEnter={() => cursorChangeHandler("hovered")}
-                                onMouseLeave={() => cursorChangeHandler("")}
-                            > 
-                                {item.title}
-                            </Link>
-                            
-                        // </li>
+                            onClick={togglerClicked}
+                            onMouseEnter={() => cursorChangeHandler("hovered")}
+                            onMouseLeave={() => cursorChangeHandler("")}
+                        > 
+                            {item.title}
+                        </Link>
                     )
-                })}  
+                })}
+                
+                <Modalpdf className="resume"/>
+
             </div>
 
         </nav>
