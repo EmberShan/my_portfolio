@@ -20,9 +20,9 @@ const Page = () => {
       
       <Home />
       <UI />
-      <UX />
+      
       <Graphic />
-      <Programming />
+      <UX />
 
       <Contact />
 

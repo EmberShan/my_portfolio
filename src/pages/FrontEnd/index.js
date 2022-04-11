@@ -6,7 +6,7 @@ import CustomMarquee from '../../components/Marquee';
 
 const Page1 = () => {
   return (
-    <FullPage dark className='page1'>
+    <FullPage dark className='page1' id="web">
 
       <Title long center blue className='title'> Web Developer <br/> From Design to Final Product </Title>
 

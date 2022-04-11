@@ -7,7 +7,7 @@ import { Link } from 'react-scroll';
 
 const Page1 = () => {
   return (
-    <FullPage id='ux'>
+    <FullPage>
         <Title center> 
             Graphic Designer
         </Title>

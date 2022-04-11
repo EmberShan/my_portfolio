@@ -10,8 +10,8 @@ export const MenuItems = [
         className: 'nav-links',
     },
     {
-        title: 'UX Research', 
-        url: 'ux', 
+        title: 'Web', 
+        url: 'web', 
         className: 'nav-links',
     },
     {
@@ -20,8 +20,8 @@ export const MenuItems = [
         className: 'nav-links',
     },
     {
-        title: 'Programming', 
-        url: 'programming', 
+        title: 'UX Research', 
+        url: 'ux', 
         className: 'nav-links',
     },
     {
