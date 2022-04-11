@@ -36,7 +36,7 @@ function MyVerticallyCenteredModal(props) {
               cursor: 'none', 
           }}>Close</Button>
         </Modal.Footer>
-      </Modal>
+      </Modal> 
     );
   }
 
