@@ -14,7 +14,7 @@ function MyVerticallyCenteredModal(props) {
   return (
       <Modal
         {...props}
-        size="lg"
+        size="xl"
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
@@ -26,8 +26,8 @@ function MyVerticallyCenteredModal(props) {
         <Modal.Body>
             {/* need to hide the custom cursor */}
             <iframe 
+            className="pdf-frame"
             src={require('../../imgs/resume/resume-Ember.pdf')} 
-            width="100%" height="500px"
                 onMouseEnter={() => cursorChangeHandler("hide")}
                 onMouseLeave={() => cursorChangeHandler("")}
             ></iframe>
@@ -50,10 +50,6 @@ const Modalpdf = (props) => {
     <div className="pdf-wrapper">
       <Button variant="primary" onClick={() => setModalShow(true)}
         className="pdf-button"
-        style={{
-             
-            
-        }}
       >
         Check Resume
       </Button>
