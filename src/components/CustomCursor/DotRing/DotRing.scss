@@ -40,7 +40,7 @@ $dot_size: 10px;
       -webkit-transition-timing-function: ease-out;
       transition-timing-function: ease-out;
       will-change: width, height, transform, border;
-      z-index: 999;
+      z-index: 9999999;
       pointer-events: none;
 
       &.hovered{
@@ -58,7 +58,7 @@ $dot_size: 10px;
       background-color: c.$cursor;
       border-radius: 100%;
       transform: translate(-50%, -50%);
-      z-index: 999;
+      z-index: 9999999;
       pointer-events: none;
 
       &.hovered{

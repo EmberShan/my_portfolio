@@ -31,6 +31,7 @@ function MyVerticallyCenteredModal(props) {
         <Modal.Footer>
           <Button onClick={props.onHide} style={{
               backgroundColor: '#003049', 
+              cursor: 'none', 
           }}>Close</Button>
         </Modal.Footer>
       </Modal>
