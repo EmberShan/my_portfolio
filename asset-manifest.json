@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.b233fbe1.css",
-    "main.js": "/my_portfolio/static/js/main.bc66b4f9.js",
+    "main.css": "/my_portfolio/static/css/main.a9b01b14.css",
+    "main.js": "/my_portfolio/static/js/main.ec8bf28c.js",
     "static/js/787.1ed0c42c.chunk.js": "/my_portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/7.mov": "/my_portfolio/static/media/7.2104691d3cdffbb4e8bf.mov",
     "static/media/5.mov": "/my_portfolio/static/media/5.1a6d66de9eba95845c31.mov",
@@ -25,6 +25,7 @@
     "static/media/fa-brands-400.ttf": "/my_portfolio/static/media/fa-brands-400.8dddb1b4cd1f65b03167.ttf",
     "static/media/fa-solid-900.woff2": "/my_portfolio/static/media/fa-solid-900.1089d04e572b44b3d54a.woff2",
     "static/media/fa-brands-400.woff2": "/my_portfolio/static/media/fa-brands-400.a4ac62083ead21bd1ea2.woff2",
+    "static/media/resume-Ember.pdf": "/my_portfolio/static/media/resume-Ember.c5aae33a05ff7cda3ea9.pdf",
     "static/media/fa-regular-400.ttf": "/my_portfolio/static/media/fa-regular-400.e2e080ba746195932d7f.ttf",
     "static/media/fa-regular-400.woff2": "/my_portfolio/static/media/fa-regular-400.d9ed9b6f8138a03cd29d.woff2",
     "static/media/xd.png": "/my_portfolio/static/media/xd.9c224a9f684ab8cb6283.png",
@@ -37,12 +38,12 @@
     "static/media/indesign.png": "/my_portfolio/static/media/indesign.1efe97b64b1feba167fe.png",
     "static/media/fa-v4compatibility.woff2": "/my_portfolio/static/media/fa-v4compatibility.2e77423e3ed431908eda.woff2",
     "index.html": "/my_portfolio/index.html",
-    "main.b233fbe1.css.map": "/my_portfolio/static/css/main.b233fbe1.css.map",
-    "main.bc66b4f9.js.map": "/my_portfolio/static/js/main.bc66b4f9.js.map",
+    "main.a9b01b14.css.map": "/my_portfolio/static/css/main.a9b01b14.css.map",
+    "main.ec8bf28c.js.map": "/my_portfolio/static/js/main.ec8bf28c.js.map",
     "787.1ed0c42c.chunk.js.map": "/my_portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b233fbe1.css",
-    "static/js/main.bc66b4f9.js"
+    "static/css/main.a9b01b14.css",
+    "static/js/main.ec8bf28c.js"
   ]
 }
