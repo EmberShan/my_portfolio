@@ -1,36 +1,41 @@
 import React from 'react'
 import {ui} from '../../imgs'
-import { FullPage, Title, FullBgImg } from '../../components/styles'
+import { Thumbnail, SubTitle } from '../../components/styles'
 import {Button} from '../../components/Button/Button';
 
 
 const Page2 = () => {
 
   return (
-    <FullPage dark id='ui1'>
 
-      <div style={{
-        position: 'absolute', 
-        bottom: '20%', 
-        left: '5%', 
-        }}>
-        <Title long style={{
-            color: '#003049', 
-            marginBottom: '20px', 
-            }}> 
-          Navigation App for <br></br> MotorCity Casino Hotel 
-        </Title>
+      <Thumbnail id='ui1'> 
+        <div>
+          <span className='thumbnail'>
+              <img src={require('../../imgs/pics/ui/mdp_mockup.png')}></img> 
+              <SubTitle> Navigation App  </SubTitle>
+              <SubTitle className='small_title'> for MotorCity Casino Hotel </SubTitle>
+              <Button
+                text="Learn More"
+                pos={'relative'}
+                route={'/mdp'}
+              > </Button>
+            </span>
 
-        <Button pos={'relative'} className="learnmore" 
-        text="Learn More" route={'/mdp'}> </Button>
+            <span className='thumbnail'>
+              <img src={require('../../imgs/pics/ui/320_mockup.png')}></img> 
+              <SubTitle> Diet/Delivery App  </SubTitle>
+              <SubTitle className='small_title'> graphic design course project </SubTitle>
+              <Button
+                text="Learn More" 
+                pos={'relative'}
+                route={'/rutabagga'}
+              > </Button>
+            </span>
+        </div>
 
-      </div>
+        
+      </Thumbnail>
 
-
-      
-
-      <FullBgImg src={ui[0].src}> </FullBgImg>
-    </FullPage>
   )
 }
 

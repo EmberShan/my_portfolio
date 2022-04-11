@@ -9,6 +9,8 @@ import Page from '../pages/AllPages/Page.js';
 import Project2 from '../Detail/project2';
 import Impressionism from '../Detail/impressionism';
 import MDP from '../Detail/mdp';
+import Rutabagga from '../Detail/rutabagga';
+
 
 import {
   HashRouter,
@@ -35,6 +37,7 @@ function App(){
               <Route exact path="project2" element={<Project2 />} />
               <Route exact path="impressionism" element={<Impressionism />} />
               <Route exact path="mdp" element={<MDP />} />
+              <Route exact path="rutabagga" element={<Rutabagga />} />
             </Routes>
           </ScrollToTop>
           

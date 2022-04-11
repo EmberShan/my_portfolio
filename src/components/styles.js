@@ -211,3 +211,93 @@ export const FullBgImg = styled.div`
 export const popUpBox = styled.span`
     
 `
+
+
+
+export const Thumbnail = styled.div`
+    height: 100vh;
+    width: 100vw;
+
+    display: flex; 
+    align-items: center;
+
+    background-color: ${ ({dark}) => (dark ? c.bg2 : c.bg1 ) };
+    position: relative;
+
+    overflow: hidden; 
+
+    @media screen and (min-width: 1140px) {
+        scroll-snap-align: start;
+    }
+     
+    
+    div{
+        width: 100%; 
+        display: flex; 
+        justify-content: space-evenly; 
+        align-items: flex-start;
+
+        // thumbnails 
+        .thumbnail{
+            width: 40%; 
+            height: auto;
+            max-height: 90%; 
+            overflow: hidden; 
+            
+            img{
+                width: 100%; 
+                height: 50vh; 
+                object-fit: cover; 
+                margin-bottom: 5%; 
+             }
+    
+            h2{
+                font-size: 1.3rem; 
+            }
+            .small_title{
+                font-size: 1rem; 
+            }
+            
+            // button 
+            span{
+                height: 100%; 
+                display: flex; 
+                justify-content: start; 
+                align-items: center; 
+    
+                a{
+                    font-size: 1.4rem; 
+                    padding: 10px 20px; 
+                }
+            }
+    
+        }
+    
+    }
+    
+
+    // on mobile
+    @media screen and (max-width: 576px) {
+        height: auto;
+
+        div{
+            width: 100%; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            
+            .thumbnail{
+                width: 100%; 
+                height: auto;
+                margin-bottom: 10%; 
+
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                flex-direction: column; 
+            }
+        }
+    }
+
+    
+`
