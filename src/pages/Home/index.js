@@ -16,8 +16,8 @@ const Home = () => {
         <div className='alignStart'>
           <Title className='title'> Ember Shan </Title>
           <SubTitle className='subtitle'> 
-            -Frontend Developer - UX Researcher <br></br>
-            -Graphic Designer - Programmer
+            - Frontend Developer - UI Designer <br></br>
+            - UX Researcher - Graphic Designer <br></br>
           </SubTitle>
 
           <Email className='email'>
