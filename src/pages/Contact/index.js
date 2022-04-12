@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 
 const Contact = () => {
   return (
-    <FullPage column id="contact">
+    <FullPage dark id="contact">
       <Title> Contact Me </Title>
 
       <Email className='email'>

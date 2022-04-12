@@ -225,10 +225,9 @@ export const ImgWrapper = styled.span`
         width: auto; 
         max-width: 45%; 
     }
-    
-    @media screen and (max-width: 1200px) {
+      
+    @media screen and (max-width: 576px) {
         flex-direction: column; 
-
         img{
             width: 100%; 
         }

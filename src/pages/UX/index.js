@@ -1,26 +1,50 @@
 import React from 'react'
 import './UX.scss'
-import { FullPage, Title, Arrow } from '../../components/styles'
+import { SubTitle, Title, Thumbnail } from '../../components/styles'
 import {Button} from '../../components/Button/Button';
 
 
 const UX = () => {
+
+
+
   return (
-    <FullPage dark id="ux">
-        <Title> UX Researcher </Title>
-        <Title center long style={{marginBottom: '3%'}}> 
-            Empathy -
-            Communicate -
-            Analyze 
-        </Title>
+    <Thumbnail id='ux' style={{
+      flexDirection: 'column', 
+      alignItems: 'center', 
+      padding: '5%', 
+    }}> 
+        <Title style={{
+          fontSize: '2.5rem', 
+          marginBottom: '10px', 
+        }}> UX Researcher </Title>
 
-        <Button text="Learn More" 
-          pos={'relative'}
-          route={'/project2'}
-        > </Button>
+        <div>
+          <span className='thumbnail'>
+              <img src={require('../../imgs/pics/ux/thumb1.png')}></img> 
+              <SubTitle style ={{fontSize: '1.3rem'}}> UX Research on shopping behavior  </SubTitle>
+              <SubTitle className='small_title'> Interviews, Surveys, Analysis </SubTitle>
+              <Button
+                text="Learn More"
+                pos={'relative'}
+                route={'/project2'}
+              > </Button>
+            </span>
 
+            <span className='thumbnail'>
+              <img src={require('../../imgs/pics/ux/thumb2.png')}></img> 
+              <SubTitle style ={{fontSize: '1.3rem'}}> Heuristics Evaluation  </SubTitle>
+              <SubTitle className='small_title'> Craiglist Website </SubTitle>
+              <Button
+                text="Learn More"
+                pos={'relative'}
+                route={'/project3'}
+              > </Button>
+            </span>
+        </div>
 
-    </FullPage>
+        
+    </Thumbnail>
   )
 }
 

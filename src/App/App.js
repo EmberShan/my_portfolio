@@ -10,6 +10,7 @@ import Project2 from '../Detail/project2';
 import Impressionism from '../Detail/impressionism';
 import MDP from '../Detail/mdp';
 import Rutabagga from '../Detail/rutabagga';
+import Project3 from '../Detail/project3';
 
 
 import {
@@ -38,6 +39,7 @@ function App(){
               <Route exact path="impressionism" element={<Impressionism />} />
               <Route exact path="mdp" element={<MDP />} />
               <Route exact path="rutabagga" element={<Rutabagga />} />
+              <Route exact path="project3" element={<Project3 />} />
             </Routes>
           </ScrollToTop>
           
