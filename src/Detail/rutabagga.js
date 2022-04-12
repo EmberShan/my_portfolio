@@ -136,7 +136,7 @@ export default function Rutabagga() {
 
             <div> 
                 <h1> Identity Guide: Logo and Colors </h1>
-                <h2> Logo </h2>
+                <h3> Logo </h3>
                 <p>
                 The logo emphasizes the theme of environmentally friendly 
                 (reduce packaging waste) and delivering fresh vegerables with care. 
@@ -150,7 +150,7 @@ export default function Rutabagga() {
             </img>
 
             <div> 
-                <h2> Color Harmony: triad </h2>
+                <h3> Color Harmony: triad </h3>
                 <p>
                 I chose this color scheme because purple represents rutabagga,
                 green is suitable for the farmer theme, and orange can make important UI elemnents like buttons stand out.
