@@ -153,6 +153,13 @@ export const Footer = styled.div`
         content: "© Ember Shan - University of Michigan 2021"; 
     }
     
+
+    @media screen and (max-width: 576px) {
+        &::after{
+            font-size: .7rem; 
+        }
+    }
+    
 `
 
 
@@ -246,6 +253,12 @@ export const GoToTop = styled.div`
             i{
                 color: red; 
             }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        a i{
+            font-size: 3rem; 
         }
     }
     
