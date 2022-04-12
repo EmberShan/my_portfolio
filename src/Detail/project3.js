@@ -1,4 +1,4 @@
-import {Context, Summary, Content, Footer, ImgWrapper} from './styles';
+import {Context, Summary, Content, Footer, ImgWrapper, GoToTop } from './styles';
 import './detail.scss'
 
 import { Link } from 'react-scroll';
@@ -10,7 +10,14 @@ export default function Project3() {
   return (
     
     <div id='project3'>
+
+    <GoToTop>
+        <Link to="project3">
+            <i class="fa-solid fa-circle-arrow-up"></i> 
+        </Link>
+    </GoToTop>
       
+
       <Context>
         <div className='btnWrapper'>
           <button className="backBtn" onClick={() => navigate(-1)} > 
@@ -57,8 +64,13 @@ export default function Project3() {
           <div className='text'>
             <h2> Key Takeaways:  </h2>
             <p> 
-                Keep the 10 Heuristics Evaluations in mind, 
-                Combine all members' results together,       
+                Always keep the 10 Heuristics Evaluations in mind when designing, 
+                <br></br>
+                Always give the user freedom when using our product, 
+                <br></br>
+                Combine all members' results together,
+                <br></br>
+                Communicate with group memebers       
             </p>
           </div>
 
@@ -192,19 +204,15 @@ export default function Project3() {
           </div>
 
         
-            {/* <div>
-                <h2> All 46 non-repeating issues found by our group here: </h2>
-            </div>
-            <img src={require('./imgs/project3/appendix.png')} alt=""/> */}
+        <div>
+            <h2> All 46 non-repeating issues found by our group here: </h2>
+        </div>
+        <img src={require('./imgs/project3/appendix.png')} alt=""/>
 
       </Content>
 
 
-      <Footer>
-        <Link to="project3">
-            <i class="fa-solid fa-angle-up"></i>
-        </Link>
-      </Footer>
+      <Footer></Footer>
 
     </div>
   )

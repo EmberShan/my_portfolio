@@ -1,4 +1,4 @@
-import {Top, Context, Summary, Content, ImgWrapper, Footer} from './styles';
+import {Top, Context, Summary, Content, ImgWrapper, Footer, GoToTop} from './styles';
 import './detail.scss'
 
 import { Link } from 'react-scroll';
@@ -10,6 +10,12 @@ export default function MDP() {
   return (
 
     <div id='mdp'>
+
+        <GoToTop>
+          <Link to="mdp">
+              <i class="fa-solid fa-circle-arrow-up"></i> 
+          </Link>
+        </GoToTop>
 
         <Top className='mdp'>
             <div className='btnWrapper' style={{
@@ -182,11 +188,7 @@ export default function MDP() {
         
 
 
-        <Footer>
-            <Link to="mdp">
-                <i class="fa-solid fa-angle-up"></i>
-            </Link>
-        </Footer>
+        <Footer></Footer>
 
     </div>
   )

@@ -145,28 +145,12 @@ export const Content = styled.div`
 export const Footer = styled.div`
     background-color: #003049; 
     margin-top: 2%;
-    padding: 20px;  
+    padding: 4%;  
     text-align: center; 
+    color: #FDF0D5; 
 
-    a{
-        display: flex; 
-        flex-direction: column; 
-        justify-content: center; 
-        align-items: center; 
-        color: #FDF0D5; 
-        text-decoration: none; 
-
-        i{
-            color: #FDF0D5; 
-            font-size: 3rem; 
-        }
-
-        &:hover, &:active{
-            color: red; 
-            i{
-                color: red; 
-            }
-        }
+    &::after{
+        content: "© Ember Shan - University of Michigan 2021"; 
     }
     
 `
@@ -232,4 +216,37 @@ export const ImgWrapper = styled.span`
             width: 100%; 
         }
     }
+`
+
+
+
+export const GoToTop = styled.div`
+    position: fixed; 
+    z-index: 1000; 
+    bottom: 3%;  
+    right: 3%; 
+    mix-blend-mode: difference; 
+    cursor: pointer; 
+
+    a{
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        color: #FDF0D5; 
+        text-decoration: none; 
+
+        i{
+            color: #FDF0D5; 
+            font-size: 4rem; 
+        }
+
+        &:hover, &:active{
+            color: red; 
+            i{
+                color: red; 
+            }
+        }
+    }
+    
 `

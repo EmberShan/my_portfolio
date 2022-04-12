@@ -3,7 +3,7 @@ import React from 'react'
 import { Link } from 'react-scroll';
 import { useNavigate } from 'react-router-dom';
 
-import {Top, Context, Summary, Content, VideoWrapper, Video, Footer} from './styles';
+import {Top, Context, Summary, Content, VideoWrapper, Video, Footer, GoToTop} from './styles';
 import v from './imgs/impressionism/2.mov';
 
 const Impressionism = () => {
@@ -12,6 +12,12 @@ const Impressionism = () => {
 
   return (
     <div id="impressionismTop">
+
+        <GoToTop>
+          <Link to="impressionismTop">
+              <i class="fa-solid fa-circle-arrow-up"></i> 
+          </Link>
+        </GoToTop>
 
         <Top className='impressionism'>
             <div className='btnWrapper' style={{
@@ -224,13 +230,7 @@ const Impressionism = () => {
       </Content>
 
 
-      <Footer>
-        <Link smooth to="impressionismTop">
-            <i class="fa-solid fa-angle-up"></i>
-        </Link>
-        
-        
-      </Footer>
+      <Footer></Footer>
 
 
     </div>

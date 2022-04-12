@@ -16,7 +16,8 @@ const UX = () => {
     }}> 
         <Title style={{
           fontSize: '2.5rem', 
-          marginBottom: '10px', 
+          marginBottom: '3%', 
+          marginTop: '5%', 
         }}> UX Researcher </Title>
 
         <div>

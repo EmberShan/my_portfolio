@@ -1,4 +1,4 @@
-import {Context, Summary, Content, Footer} from './styles';
+import {Context, Summary, Content, Footer, GoToTop} from './styles';
 import './detail.scss'
 
 import { Link } from 'react-scroll';
@@ -10,6 +10,12 @@ export default function Project2() {
   return (
     
     <div id='project2'>
+
+      <GoToTop>
+          <Link to="project2">
+              <i class="fa-solid fa-circle-arrow-up"></i> 
+          </Link>
+      </GoToTop>
       
       <Context>
         <div className='btnWrapper'>
@@ -162,11 +168,7 @@ export default function Project2() {
       </Content>
 
 
-      <Footer>
-        <Link to="project2">
-            <i class="fa-solid fa-angle-up"></i>
-        </Link>
-      </Footer>
+      <Footer></Footer>
 
     </div>
   )

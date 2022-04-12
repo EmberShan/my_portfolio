@@ -1,4 +1,4 @@
-import {Top, Context, Summary, Content, ImgWrapper, Footer} from './styles';
+import {Top, Context, Summary, Content, ImgWrapper, Footer, GoToTop} from './styles';
 import './detail.scss'
 
 import { Link } from 'react-scroll';
@@ -10,7 +10,11 @@ export default function Rutabagga() {
   return (
 
     <div id='rutabagga'>
-
+        <GoToTop>
+          <Link to="rutabagga">
+              <i class="fa-solid fa-circle-arrow-up"></i> 
+          </Link>
+        </GoToTop>
 
         <Top className='rutabagga'>
             <div className='btnWrapper' style={{
@@ -119,11 +123,7 @@ export default function Rutabagga() {
         </Content>
 
 
-        <Footer>
-            <Link to="rutabagga">
-                <i class="fa-solid fa-angle-up"></i>
-            </Link>
-        </Footer>
+        <Footer></Footer>
 
     </div>
 
