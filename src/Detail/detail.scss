@@ -53,6 +53,16 @@ a:hover{
     color: red; 
 }
 
+#rutabagga{
+    div{
+        .small-img{
+            padding: 0; 
+        }
+    }
+    
+}
+
+
 @media screen and (min-width: 768px) {
     .btnWrapper{
     
@@ -65,6 +75,15 @@ a:hover{
             }
             
         }
+    }
+
+    #rutabagga{
+        div{
+            .small-img{
+                padding: 0 15%; 
+            }
+        }
+        
     }
 }
 

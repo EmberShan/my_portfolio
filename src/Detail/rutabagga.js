@@ -113,12 +113,51 @@ export default function Rutabagga() {
 
 
             <img src={require('./imgs/rutabagga/2.jpg')} alt=""/>
-            <img src={require('./imgs/rutabagga/5.jpg')} alt=""/>
 
 
-            <img src={require('./imgs/rutabagga/3.jpg')} alt=""/>
-            <img src={require('./imgs/rutabagga/4.jpg')} alt=""/>
+            <div> 
+                <h2> Layout Grid </h2>
+                <p>
+                    Grid is utilized on all screens to make sure the layout is 
+                    consistent. Below are only two examples of the layout grids 
+                    used. As shown in the images, the left and right margins are 
+                    the same throughout different screens. Titles and the top of 
+                    the cards are also aligned.
+                </p>
+            </div>
 
+            <img className='small-img'
+                src={require('./imgs/rutabagga/5.jpg')} alt=""/>
+            
+
+            <img className='small-img'
+                src={require('./imgs/rutabagga/3.jpg')} alt="">
+            </img>
+
+            <div> 
+                <h1> Identity Guide: Logo and Colors </h1>
+                <h2> Logo </h2>
+                <p>
+                The logo emphasizes the theme of environmentally friendly 
+                (reduce packaging waste) and delivering fresh vegerables with care. 
+                The contrast between the red color and the green background makes the logo very obvious. 
+                The white bold text for “Rutabagga” is also very recognizable.
+                </p>
+            </div>
+
+            <img className='small-img'
+                src={require('./imgs/rutabagga/4.jpg')} alt="">
+            </img>
+
+            <div> 
+                <h2> Color Harmony: triad </h2>
+                <p>
+                I chose this color scheme because purple represents rutabagga,
+                green is suitable for the farmer theme, and orange can make important UI elemnents like buttons stand out.
+                The color scheme overall is very simple and I mostly used this green color
+                along with occasional uses of orange and purple for important elements and messages.
+                </p>
+            </div>
 
         </Content>
 
