@@ -21,7 +21,13 @@ export default function Rutabagga() {
                 top: '10%', 
             }}>
 
-                <button className="backBtn" onClick={() => navigate(-1)}> 
+                <button className="backBtn" onClick={() => {
+                    if (window.history.state && window.history.state.idx > 0) {
+                        navigate(-1);
+                    } else {
+                        navigate('/', { replace: true }); // the current entry in the history stack will be replaced with the new one with { replace: true }
+                    }
+                }} > 
                     <i class="fa-solid fa-angle-left"></i>
                     <div className='mobile-hide'>Back</div>
                 </button>  

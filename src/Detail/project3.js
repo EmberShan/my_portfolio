@@ -20,9 +20,15 @@ export default function Project3() {
 
       <Context>
         <div className='btnWrapper'>
-          <button className="backBtn" onClick={() => navigate(-1)} > 
-            <i class="fa-solid fa-angle-left"></i>
-            <div className='mobile-hide'>Back</div>
+          <button className="backBtn" onClick={() => {
+                if (window.history.state && window.history.state.idx > 0) {
+                    navigate(-1);
+                } else {
+                    navigate('/', { replace: true }); // the current entry in the history stack will be replaced with the new one with { replace: true }
+                }
+              }} > 
+              <i class="fa-solid fa-angle-left"></i>
+              <div className='mobile-hide'>Back</div>
           </button>  
 
           <h1> Heuristics Evaluation on Craiglist Website  </h1>
