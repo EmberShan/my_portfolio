@@ -11,6 +11,7 @@ import Impressionism from '../Detail/impressionism';
 import MDP from '../Detail/mdp';
 import Rutabagga from '../Detail/rutabagga';
 import Project3 from '../Detail/project3';
+import Portfolio from '../Detail/port'
 
 
 import {
@@ -40,6 +41,7 @@ function App(){
               <Route exact path="mdp" element={<MDP />} />
               <Route exact path="rutabagga" element={<Rutabagga />} />
               <Route exact path="project3" element={<Project3 />} />
+              <Route exact path="portfolio" element={<Portfolio />} />
             </Routes>
           </ScrollToTop>
           
