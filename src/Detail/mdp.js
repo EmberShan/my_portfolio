@@ -189,6 +189,52 @@ export default function MDP() {
             
             </ImgWrapper>
 
+
+            <div> 
+                <h2> Project Overview: System Diagram </h2>
+            </div>
+            <img src={require('./imgs/mdp/diagram.jpg')} alt=""/>
+
+
+            <ImgWrapper>
+
+                <img src={require('./imgs/mdp/api.png')} alt=""/>
+                <span> 
+                <h2> Getting data from Backend API </h2>
+                    Using React website to dynamically present the user's current location (red marker), 
+                    and map slot machine locations (orange markers) by making API calls. 
+                </span>
+            
+            </ImgWrapper>
+
+
+            <div> 
+                <h2> Not Just About designing and coding </h2>
+
+                <h3> Project Management: Gantt Chart </h3>
+                Without supervisors, our student team utilized Gantt Chart 
+                to allocate time efficiently. 
+            </div>
+            <img src={require('./imgs/mdp/gantt.jpg')} alt=""/>
+
+
+            <div> 
+                <h3> Research Paper </h3>
+                
+                With no professors to teach us or give us directions, we need 
+                to figure out our project background and plans by ourselves. 
+                To do so, we investigated similar projects and learned pathfinding 
+                algorithms. The end result is a 20-page research paper. 
+
+                <br></br>
+                <br></br>
+
+                <a href={require('./imgs/mdp/es1.pdf')} download
+                    style={{color: '#FFA00F', }}
+                > Click here to download the paper </a>
+
+            </div>
+
             
         </Content>
         
