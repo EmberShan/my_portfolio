@@ -101,25 +101,24 @@ export default function Rutabagga() {
             alignItems: 'center', 
         }}>
 
-            <img style={{
-                width: '75%', 
-            }}
-            src={require('./imgs/rutabagga/1.jpg')} alt="Color styling guide"/>
-
-
             <div> 
-                <h2> Grid Layout </h2>
+                <h2> Identity Guide: Logo and Colors </h2>
+                <h3> Logo </h3>
                 <p>
-                    The whole layout utilizes cards and shapes that are conventional 
-                    to other apps in the industry to help people better understand the 
-                    app without extra instructions. One screen will only display a limited 
-                    amount of information (or cards in this case) to avoid overwhelming the users.
+                The logo emphasizes the theme of environmentally friendly 
+                (reduce packaging waste) and delivering fresh vegerables with care. 
+                The contrast between the red color and the green background makes the logo very obvious. 
+                The white bold text for “Rutabagga” is also very recognizable.
                 </p>
             </div>
 
+            <img className='small-img'
+                src={require('./imgs/rutabagga/4.jpg')} alt="">
+            </img>
 
-            <img src={require('./imgs/rutabagga/2.jpg')} alt=""/>
-
+            <img className='small-img'
+                src={require('./imgs/rutabagga/6.jpg')} alt="">
+            </img>
 
             <div> 
                 <h2> Layout Grid </h2>
@@ -134,36 +133,50 @@ export default function Rutabagga() {
 
             <img className='small-img'
                 src={require('./imgs/rutabagga/5.jpg')} alt=""/>
+
+
+            <div> 
+                <h2> Low-fi Wireframes </h2>
+                <p>
+                    The whole layout utilizes cards and shapes that are conventional 
+                    to other apps in the industry to help people better understand the 
+                    app without extra instructions. One screen will only display a limited 
+                    amount of information (or cards in this case) to avoid overwhelming the users.
+                </p>
+            </div>
+
+
+            <img src={require('./imgs/rutabagga/2.jpg')} alt=""/>
+
+            <div> 
+                <h2> Lesson Learned: UI should never compete with the content </h2>
+                <p>
+                    First draft having heavy colors and distract users from the content. 
+                </p>
+            </div>
+
+            <h3> Before </h3>
+            <img src={require('./imgs/rutabagga/old.jpg')} alt=""/>
+
+            <h3> After </h3>
+            <p>  
+                <ul>
+                    <li> Less colors resulting in a cleaner look </li>
+                    <li> Sticking to the identity color scheme </li>
+                </ul>
+            </p>
+            <img src={require('./imgs/rutabagga/1.jpg')} alt=""/>
+            
+
+
+            
             
 
             <img className='small-img'
                 src={require('./imgs/rutabagga/3.jpg')} alt="">
             </img>
 
-            <div> 
-                <h1> Identity Guide: Logo and Colors </h1>
-                <h3> Logo </h3>
-                <p>
-                The logo emphasizes the theme of environmentally friendly 
-                (reduce packaging waste) and delivering fresh vegerables with care. 
-                The contrast between the red color and the green background makes the logo very obvious. 
-                The white bold text for “Rutabagga” is also very recognizable.
-                </p>
-            </div>
-
-            <img className='small-img'
-                src={require('./imgs/rutabagga/4.jpg')} alt="">
-            </img>
-
-            <div> 
-                <h3> Color Harmony: triad </h3>
-                <p>
-                I chose this color scheme because purple represents rutabagga,
-                green is suitable for the farmer theme, and orange can make important UI elemnents like buttons stand out.
-                The color scheme overall is very simple and I mostly used this green color
-                along with occasional uses of orange and purple for important elements and messages.
-                </p>
-            </div>
+            
 
         </Content>
 
