@@ -30,6 +30,8 @@ const Nav = (props) => {
             : {top: '0'} }
         >
 
+            
+
             {/* icon for hamburger */}
             <div className="nav-toggler">
                 <div className="nav-toggler-icon" onClick={togglerClicked}>
@@ -43,6 +45,18 @@ const Nav = (props) => {
             </div>
 
             <div className={clicked ? "nav-menu active" : "nav-menu"}>
+                {/* <img src={require('../../imgs/icons/logo.svg')}>  </img> */}
+                <Link to='home' className='nav_links logo'
+                onClick={togglerClicked}
+                onMouseEnter={() => cursorChangeHandler("hovered")}
+                onMouseLeave={() => cursorChangeHandler("")}> 
+                    <img src={require('../../imgs/icons/logo.png')} 
+                        style={{
+                            width: '2rem', 
+                            height: 'auto', 
+                        }}/>
+                </Link>
+
                 {/* looping through the menu items */}
                 {MenuItems.map(( item, index ) => {
                     return(
@@ -51,7 +65,7 @@ const Nav = (props) => {
                             to={item.url} 
                             spy={true}
 
-                            className={'nav_links '+ item.className}
+                            className={'nav_links animation '+ item.className}
 
                             onClick={togglerClicked}
                             onMouseEnter={() => cursorChangeHandler("hovered")}

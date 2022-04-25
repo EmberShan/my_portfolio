@@ -1,9 +1,9 @@
 export const MenuItems = [
-    {
-        title: 'Home', 
-        url: 'home', 
-        className: 'nav-links',
-    },
+    // {
+    //     title: 'Home', 
+    //     url: 'home', 
+    //     className: 'nav-links',
+    // },
     {
         title: 'UI Design', 
         url: 'ui', 
