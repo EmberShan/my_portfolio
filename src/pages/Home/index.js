@@ -8,29 +8,41 @@ const Home = () => {
     <FullPage id='home' padding={'10%'}>
       <Container className='container'>
 
-        <span className='school'> 
+        {/* <span className='school'> 
           <i class="fa-solid fa-location-pin"></i>
           University of Michigan - Ann Arbor
-        </span>
+        </span> */}
 
         <div className='alignStart'>
-          <Title className='title'> Ember Shan </Title>
+          {/* <Title className='title'> Ember Shan </Title>
           <SubTitle className='subtitle'> 
             - Frontend Developer - UI Designer <br></br>
             - UX Researcher - Graphic Designer <br></br>
-          </SubTitle>
+          </SubTitle> */}
 
-          <Email className='email'>
+          <div>
+            <img src={require('../../imgs/logo-extended.png')} alt="my logo extended"
+              style={{
+                maxHeight: '20rem', 
+                maxWidth: '90%', 
+                height: 'auto', 
+              }}
+            />
+          </div>
+
+          
+
+          {/* <Email className='email'>
             <i class="fa-solid fa-envelope"></i>
             <a href="mailto: embershan3@gmail.com"> embershan3@gmail.com </a>
-          </Email>
+          </Email> */}
         </div>
         
       </Container>
 
       <div className='arrow-container'>
         <Link to="ui" spy={true}>
-          <Arrow className='arrow'> <i class="fa-solid fa-circle-arrow-down"></i> </Arrow>
+          <Arrow className='arrow'> <i class="fa-solid fa-angle-down"></i> </Arrow>
         </Link>
       </div>
       

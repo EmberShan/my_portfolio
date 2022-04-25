@@ -16,7 +16,7 @@ const Contact = () => {
 
       <Link to="home" spy={true}>
         <Arrow rotate className='arrow'> 
-          <i class="fa-solid fa-circle-arrow-down"></i> 
+          <i class="fa-solid fa-angle-down"></i>
         </Arrow>
       </Link>
       

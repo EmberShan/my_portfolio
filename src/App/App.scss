@@ -11,6 +11,7 @@ body{
     overscroll-behavior: none; //for preventing scrolling and revealing the white space
     font-family: 'Squada One', sans-serif;
     -webkit-text-size-adjust: 100%; // trying to fix font size inconsistency on iphones
+    overflow-x: hidden;
 }
 
 *{

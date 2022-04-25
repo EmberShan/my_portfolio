@@ -33,11 +33,11 @@ export const Title = styled.h1`
     margin-bottom: 0;
 
     @media screen and (min-width: 768px) {
-        font-size: ${ ({long}) => (long ? `3rem` : `6rem` ) };
+        font-size: ${ ({long}) => (long ? `3rem` : `5rem` ) };
         line-height: 1.2em;
     }
     @media screen and (min-width: 1140px) {
-        font-size: ${ ({long}) => (long ? `4rem` : `9rem` ) };
+        font-size: ${ ({long}) => (long ? `3rem` : `7rem` ) };
     }
 `
 
