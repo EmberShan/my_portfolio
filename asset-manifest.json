@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.73c49df4.css",
-    "main.js": "/my_portfolio/static/js/main.0b0efb4d.js",
+    "main.css": "/my_portfolio/static/css/main.f82aab30.css",
+    "main.js": "/my_portfolio/static/js/main.006d5073.js",
     "static/js/787.1ed0c42c.chunk.js": "/my_portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/7.mov": "/my_portfolio/static/media/7.2104691d3cdffbb4e8bf.mov",
     "static/media/5.mov": "/my_portfolio/static/media/5.1a6d66de9eba95845c31.mov",
@@ -39,6 +39,7 @@
     "static/media/fa-brands-400.woff2": "/my_portfolio/static/media/fa-brands-400.a4ac62083ead21bd1ea2.woff2",
     "static/media/resume-Ember.pdf": "/my_portfolio/static/media/resume-Ember.0f38818f19c38f3988d6.pdf",
     "static/media/fa-regular-400.ttf": "/my_portfolio/static/media/fa-regular-400.e2e080ba746195932d7f.ttf",
+    "static/media/logo-extended.png": "/my_portfolio/static/media/logo-extended.05487823d6d54dd545a7.png",
     "static/media/fa-regular-400.woff2": "/my_portfolio/static/media/fa-regular-400.d9ed9b6f8138a03cd29d.woff2",
     "static/media/xd.png": "/my_portfolio/static/media/xd.9c224a9f684ab8cb6283.png",
     "static/media/react.png": "/my_portfolio/static/media/react.2ffe5e2c388cacdf5c6b.png",
@@ -49,12 +50,12 @@
     "static/media/indesign.png": "/my_portfolio/static/media/indesign.1efe97b64b1feba167fe.png",
     "static/media/fa-v4compatibility.woff2": "/my_portfolio/static/media/fa-v4compatibility.2e77423e3ed431908eda.woff2",
     "index.html": "/my_portfolio/index.html",
-    "main.73c49df4.css.map": "/my_portfolio/static/css/main.73c49df4.css.map",
-    "main.0b0efb4d.js.map": "/my_portfolio/static/js/main.0b0efb4d.js.map",
+    "main.f82aab30.css.map": "/my_portfolio/static/css/main.f82aab30.css.map",
+    "main.006d5073.js.map": "/my_portfolio/static/js/main.006d5073.js.map",
     "787.1ed0c42c.chunk.js.map": "/my_portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73c49df4.css",
-    "static/js/main.0b0efb4d.js"
+    "static/css/main.f82aab30.css",
+    "static/js/main.006d5073.js"
   ]
 }
