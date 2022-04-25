@@ -1,7 +1,8 @@
 import React from 'react';
 import './FrontEnd.scss';
 import {webSkills} from '../../imgs';
-import {FullPage, Arrow, Container, Icon, Title} from '../../components/styles';
+import {FullPage, Icon, Title} from '../../components/styles';
+import {Button} from '../../components/Button/Button';
 import CustomMarquee from '../../components/Marquee';
 
 const Page1 = () => {
