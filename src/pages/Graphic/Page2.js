@@ -38,7 +38,7 @@ const Page2 = () => {
               imgs={logo}
               title='Logo for diet/delivery Company'
             />
-            <SubTitle> Logo Design </SubTitle>
+            <SubTitle> Vector and logo </SubTitle>
           </span>
 
           <span className='thumbnail'>

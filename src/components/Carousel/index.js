@@ -23,9 +23,8 @@ function CustomCarousel(props)
                 <Carousel.Item>
                     <img 
                         style={{
-                            minHeight: '100vh', 
-                            height: '100vh', 
                             width: (props.width ? (props.width) : ('100vw')),
+                            height: 'auto', 
                             objectFit: 'cover',  
                             objectPosition: img.pos, 
                         }}

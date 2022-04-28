@@ -81,7 +81,7 @@ export const magazine = [
 export const logo = [
     {
         name: 'logo',
-        src: require('./pics/graphics/logo/1.jpg'),
+        src: require('./pics/graphics/logo/1.png'),
         pos: '10% 40%', 
     }, 
     {
@@ -97,6 +97,11 @@ export const logo = [
     {
         name: 'logo',
         src: require('./pics/graphics/logo/4.jpg'),
+        pos: '10% 40%', 
+    }, 
+    {
+        name: 'logo',
+        src: require('./pics/graphics/logo/6.png'),
         pos: '10% 40%', 
     }, 
 ]
