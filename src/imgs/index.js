@@ -104,6 +104,11 @@ export const logo = [
         src: require('./pics/graphics/logo/6.png'),
         pos: '10% 40%', 
     }, 
+    {
+        name: 'business card-front',
+        src: require('./pics/graphics/logo/7.jpg'),
+        pos: '10% 40%', 
+    }, 
 ]
 
 export const brochure = [
