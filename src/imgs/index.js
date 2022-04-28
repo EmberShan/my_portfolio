@@ -116,3 +116,22 @@ export const brochure = [
     }, 
 ]
 
+export const ps = [
+    {
+        name: 'drowned city',
+        src: require('./pics/graphics/ps/1_1.jpg'),
+    }, 
+    {
+        name: '',
+        src: require('./pics/graphics/ps/1_2.jpg'),
+    }, 
+    {
+        name: 'ps adjustment practice',
+        src: require('./pics/graphics/ps/2_1.jpg'),
+    }, 
+    {
+        name: '',
+        src: require('./pics/graphics/ps/2_2.jpg'),
+    },
+]
+

@@ -4,7 +4,7 @@ import { Thumbnail, SubTitle } from '../../components/styles'
 
 import CustomModal from '../../components/Modal'
 
-import { magazine, brochure, logo } from '../../imgs'
+import { magazine, brochure, logo, ps } from '../../imgs'
  
 const Page2 = () => {
 
@@ -39,6 +39,14 @@ const Page2 = () => {
               title='Logo for diet/delivery Company'
             />
             <SubTitle> Logo Design </SubTitle>
+          </span>
+
+          <span className='thumbnail'>
+            <CustomModal 
+              imgs={ps}
+              title='some photoshoped images'
+            />
+            <SubTitle> PS for fun </SubTitle>
           </span>
 
         </div>
