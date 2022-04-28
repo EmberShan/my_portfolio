@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my_portfolio/static/css/main.f82aab30.css",
-    "main.js": "/my_portfolio/static/js/main.dc4f9596.js",
+    "main.js": "/my_portfolio/static/js/main.478540d8.js",
     "static/js/787.1ed0c42c.chunk.js": "/my_portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/7.mov": "/my_portfolio/static/media/7.2104691d3cdffbb4e8bf.mov",
     "static/media/5.mov": "/my_portfolio/static/media/5.1a6d66de9eba95845c31.mov",
@@ -16,12 +16,12 @@
     "static/media/appendix.png": "/my_portfolio/static/media/appendix.47b91d9e65f0502d0a15.png",
     "static/media/desktop.png": "/my_portfolio/static/media/desktop.86dec6ed69c1dfbecd01.png",
     "static/media/mobile.mov": "/my_portfolio/static/media/mobile.6a546452417a5f0dfb92.mov",
-    "static/media/3.jpg": "/my_portfolio/static/media/3.b8862d4bda552248bae0.jpg",
+    "static/media/3.jpg": "/my_portfolio/static/media/3.7923f7b48969da7c9f8c.jpg",
     "static/media/4.jpg": "/my_portfolio/static/media/4.7923f7b48969da7c9f8c.jpg",
     "static/media/es1.pdf": "/my_portfolio/static/media/es1.dbd232e322e14bb33fec.pdf",
-    "static/media/2.jpg": "/my_portfolio/static/media/2.7923f7b48969da7c9f8c.jpg",
+    "static/media/2.jpg": "/my_portfolio/static/media/2.673b77f67a7d6e4fc22c.jpg",
     "static/media/old.jpg": "/my_portfolio/static/media/old.3f7213272c59cf94208b.jpg",
-    "static/media/1.jpg": "/my_portfolio/static/media/1.f748d209d5de12eb5fae.jpg",
+    "static/media/1.jpg": "/my_portfolio/static/media/1.b2df473e981823edca64.jpg",
     "static/media/1_2.jpg": "/my_portfolio/static/media/1_2.6090abe8988c85230854.jpg",
     "static/media/2_2.jpg": "/my_portfolio/static/media/2_2.e55d0bf116378511efcb.jpg",
     "static/media/1_1.jpg": "/my_portfolio/static/media/1_1.bfedfeea7c1287be5ee7.jpg",
@@ -33,6 +33,7 @@
     "static/media/5.jpg": "/my_portfolio/static/media/5.69679b5415dcb95b4127.jpg",
     "static/media/6.jpg": "/my_portfolio/static/media/6.728f312cb7d358e3465a.jpg",
     "static/media/gantt.jpg": "/my_portfolio/static/media/gantt.04d684c479d0c70f754f.jpg",
+    "static/media/7.jpg": "/my_portfolio/static/media/7.aa2126151d0963358ac9.jpg",
     "static/media/figma.png": "/my_portfolio/static/media/figma.72fbc535ebe253a5dbc4.png",
     "static/media/fa-solid-900.ttf": "/my_portfolio/static/media/fa-solid-900.6aef0a3f12850e081374.ttf",
     "static/media/api.png": "/my_portfolio/static/media/api.ef44c33ec94437ea5587.png",
@@ -40,6 +41,7 @@
     "static/media/5.png": "/my_portfolio/static/media/5.cfaebae53fc445251f13.png",
     "static/media/fa-brands-400.ttf": "/my_portfolio/static/media/fa-brands-400.8dddb1b4cd1f65b03167.ttf",
     "static/media/fa-solid-900.woff2": "/my_portfolio/static/media/fa-solid-900.1089d04e572b44b3d54a.woff2",
+    "static/media/6.png": "/my_portfolio/static/media/6.ba66d50748fbd8e493ef.png",
     "static/media/fa-brands-400.woff2": "/my_portfolio/static/media/fa-brands-400.a4ac62083ead21bd1ea2.woff2",
     "static/media/resume-Ember.pdf": "/my_portfolio/static/media/resume-Ember.1074949d6d876c034eb9.pdf",
     "static/media/fa-regular-400.ttf": "/my_portfolio/static/media/fa-regular-400.e2e080ba746195932d7f.ttf",
@@ -55,11 +57,11 @@
     "static/media/fa-v4compatibility.woff2": "/my_portfolio/static/media/fa-v4compatibility.2e77423e3ed431908eda.woff2",
     "index.html": "/my_portfolio/index.html",
     "main.f82aab30.css.map": "/my_portfolio/static/css/main.f82aab30.css.map",
-    "main.dc4f9596.js.map": "/my_portfolio/static/js/main.dc4f9596.js.map",
+    "main.478540d8.js.map": "/my_portfolio/static/js/main.478540d8.js.map",
     "787.1ed0c42c.chunk.js.map": "/my_portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f82aab30.css",
-    "static/js/main.dc4f9596.js"
+    "static/js/main.478540d8.js"
   ]
 }
